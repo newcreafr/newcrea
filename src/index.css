@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .underline-animation {
+    @apply relative;
+  }
+
+  .underline-animation::after {
+    @apply absolute bottom-[-4px] left-0 h-[2px] w-full origin-bottom-right scale-x-0 bg-paletteColor2 transition-transform duration-300 content-[''] hover:origin-bottom-left hover:scale-x-100;
+  }
+
+  .footer-link {
+    @apply duration-300 hover:text-paletteColor2;
+  }
+
+  h2 {
+    @apply relative inline-block text-center text-lg font-semibold underline decoration-paletteColor2 decoration-2 xs:text-xl xs:no-underline sm:text-2xl;
+  }
+
+  h2::before,
+  h2::after {
+    @apply absolute top-[50%] hidden h-[2px] w-[20px] translate-y-[-50%] bg-paletteColor2 content-[''] xs:block xs:w-[30px];
+  }
+
+  h2::before {
+    @apply left-[-30px] xs:left-[-50px];
+  }
+
+  h2::after {
+    @apply right-[-30px] xs:right-[-50px];
+  }
+
+  .newcrea-title {
+    @apply relative;
+  }
+
+  .newcrea-title::after {
+    @apply absolute bottom-[-20px] left-[50%] block h-[2px] w-[30px] translate-x-[-50%] bg-paletteColor2 content-[''] md:h-[4px] md:w-[50px];
+  }
+
+  img {
+    @apply select-none;
+  }
+
+  p,
+  a {
+    @apply text-sm xs:text-base;
+  }
+
+  h1 {
+    @apply text-[2rem] font-bold leading-8 xs:text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-base font-bold xs:text-lg sm:text-xl;
+  }
+}

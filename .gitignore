@@ -1,0 +1,54 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# dotenv
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vite / Next.js
+.next/
+out/
+.cache/
+.vite/
+
+# Editor folders
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+
+# Misc
+*.log
+*.tgz
+*.zip
+
+# WebStorm / IntelliJ IDEA
+.idea/
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+!.idea/*.xml
+!.idea/modules.xml
+!.idea/*.iml
+
+# Ces fichiers sont propres à ta machine
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
