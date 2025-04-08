@@ -33,11 +33,11 @@
   }
 
   .newcrea-title {
-    @apply relative;
+    @apply relative inline-block pb-8; /* Ajoute de l’espace pour le ::after */
   }
 
   .newcrea-title::after {
-    @apply absolute bottom-[-20px] left-[50%] block h-[2px] w-[30px] translate-x-[-50%] bg-paletteColor2 content-[''] md:h-[4px] md:w-[50px];
+    @apply absolute bottom-4 left-1/2 h-[2px] w-[30px] -translate-x-1/2 bg-paletteColor2 content-[''] md:h-[4px] md:w-[50px];
   }
 
   img {

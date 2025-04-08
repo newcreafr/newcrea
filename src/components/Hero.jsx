@@ -1,16 +1,11 @@
-import PresentationVideo from "./PresentationVideo";
+import HeroVideo from "./HeroVideo.jsx";
+import H1 from "./H1.jsx";
 
-export default function Presentation() {
+export default function Hero() {
   return (
     <>
       <div className="mx-auto mt-16 flex w-[90%] flex-col items-center text-center">
-        <h1>
-          <span className="newcrea-title mb-10 inline-block text-paletteColor2">
-            NewCrea
-          </span>
-          <br />
-          Votre Agence Web à Nancy
-        </h1>
+        <H1>Votre Agence Web à Nancy</H1>
         <p className="my-7">
           Développez une présence digitale qui vous ressemble, grâce à nos
           solutions modernes et sur mesure.
@@ -24,7 +19,7 @@ export default function Presentation() {
           </a>
         </div>
       </div>
-      <PresentationVideo />
+      <HeroVideo />
     </>
   );
 }

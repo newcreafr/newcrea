@@ -1,4 +1,4 @@
-export default function PresentationVideo() {
+export default function HeroVideo() {
   return (
     <div>
       <video

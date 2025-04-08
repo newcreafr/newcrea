@@ -1,0 +1,11 @@
+# Rediriger toutes les requêtes vers index.html (React Router)
+RewriteEngine On
+RewriteBase /
+
+# Laisser passer les fichiers et dossiers existants
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Sinon, rediriger vers index.html
+RewriteRule . /index.html [L]

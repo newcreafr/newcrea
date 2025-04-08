@@ -1,4 +1,4 @@
-import Offer from "./Offer";
+import Offer from "./Offer.jsx";
 
 export default function Offers() {
   return (

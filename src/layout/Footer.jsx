@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full">
+    <footer className="w-full border-t border-borderColor">
       <div className="m-auto mb-10 mt-14 w-[90%] text-center text-paletteColor1">
         <div className="mb-4 flex flex-col justify-around gap-10 md:m-0 md:flex-row">
           <div className="flex flex-col items-center gap-2 md:items-start">
@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
             <a
               className="footer-link text-smTextWhtColor"
-              href="mailto:contact@newcrea.fr"
+              href="contact"
             >
               Contactez nous
             </a>
@@ -52,16 +52,16 @@ export default function Footer() {
           <div className="flex flex-col gap-2 md:items-start">
             <p className="mb-2 font-semibold">Menu</p>
             <div className="flex flex-col gap-2 text-smTextWhtColor md:items-start">
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 Accueil
               </a>
-              <a className="footer-link" href="#offers">
+              <a className="footer-link" href="/#offers">
                 Nos offres
               </a>
-              <a className="footer-link" href="#processus">
+              <a className="footer-link" href="/">
                 Notre processus de création
               </a>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 Nos réalisations
               </a>
             </div>

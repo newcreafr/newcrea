@@ -1,5 +1,5 @@
 import  { useState, useEffect } from "react";
-import ProcessusStep from "./ProcessusStep";
+import ProcessusStep from "./ProcessusStep.jsx";
 
 const steps = [
   {

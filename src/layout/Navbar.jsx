@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import ResponsiveMenu from "./ResponsiveMenu";
+import ResponsiveMenu from "./ResponsiveMenu.jsx";
 import { MdMenu } from "react-icons/md";
 
 export default function Navbar() {
@@ -16,24 +16,24 @@ export default function Navbar() {
       </div>
       <ul className="hidden items-center gap-[4vw] text-paletteColor3 md:flex">
         <li>
-          <a className="underline-animation" href="#">
+          <a className="underline-animation" href="/">
             Accueil
           </a>
         </li>
         <li>
-          <a className="underline-animation" href="#offers">
+          <a className="underline-animation" href="/#offers">
             Nos offres
           </a>
         </li>
         <li>
-          <a className="underline-animation" href="#">
+          <a className="underline-animation" href="/">
             Nos réalisations
           </a>
         </li>
       </ul>
       <a
         className="transform rounded-full bg-paletteColor2 px-4 py-2 text-paletteColor3 transition-all duration-300 ease-in-out hover:origin-center hover:scale-105 hover:bg-paletteColor3 hover:text-paletteColor1"
-        href="mailto:contact@newcrea.fr"
+        href="contact"
       >
         Nous contacter
       </a>
