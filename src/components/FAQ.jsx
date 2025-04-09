@@ -48,17 +48,17 @@ const FAQSection = () => {
           return (
             <div
               key={index}
-              className="bg-violet-100 rounded-xl p-5 transition-all"
+              className="bg-paletteColor4 rounded-xl p-5 transition-all"
             >
               <button
                 onClick={() => toggle(index)}
-                className={`w-full flex justify-between items-center text-left text-md md:text-lg font-medium text-gray-800 transition-colors duration-300 ${
-                  isOpen ? "text-purple-700" : ""
+                className={`w-full flex justify-between items-center text-left text-md md:text-lg font-medium text-paletteColor1 transition-colors duration-300 ${
+                  isOpen ? "text-paletteColor2" : ""
                 }`}
               >
                 <span>{item.question}</span>
                 <FaChevronDown
-                  className={`text-purple-600 transform transition-transform duration-300 ${
+                  className={`text-paletteColor2 transform transition-transform duration-300 ${
                     isOpen ? "rotate-180" : ""
                   }`}
                 />
@@ -73,7 +73,7 @@ const FAQSection = () => {
                 }}
                 className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
               >
-                <p className="text-md text-gray-600 mt-3">{item.answer}</p>
+                <p className="text-md text-smTextWhtColor mt-3">{item.answer}</p>
               </div>
             </div>
           );

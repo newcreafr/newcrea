@@ -14,6 +14,7 @@ export default {
         paletteColor1: "#091021",
         paletteColor2: "#6338e4",
         paletteColor3: "#FFFFFF",
+        paletteColor4: "#f3f1fa",
         borderColor: "#cdcdcd",
         smTextWhtColor: "#475569",
         smTextDrkColor: "#94a3b8",

@@ -32,7 +32,7 @@ const ContactForm = () => {
       return;
     }
 
-    if (formData.objet === "Je suis intéressé(e) par vos services" && !formData.service) {
+    if (formData.objet === "Je suis interessé(e) par vos services" && !formData.service) {
       setError("Veuillez sélectionner un service.");
       return;
     }
@@ -46,6 +46,7 @@ const ContactForm = () => {
     formDataToSend.append("email", formData.email);
     formDataToSend.append("objet", formData.objet);
     formDataToSend.append("message", fullMessage);
+    formDataToSend.append("service", formData.service);
 
     try {
       const response = await fetch("/contact.php", {
@@ -77,7 +78,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full border p-2 rounded border-paletteColor1"
+          className="w-full p-3 rounded-lg bg-paletteColor4 border border-paletteColor1 text-sm xs:text-md md:text-lg"
         />
       </label>
 
@@ -87,21 +88,21 @@ const ContactForm = () => {
           name="objet"
           value={formData.objet}
           onChange={handleChange}
-          className="w-full border p-2 rounded bg-paletteColor3 border-paletteColor1"
+          className="w-full p-3 rounded-lg bg-paletteColor4 border border-paletteColor1 text-sm xs:text-md md:text-lg"
         >
-          <option>Je suis intéressé(e) par vos services</option>
+          <option>Je suis interessé(e) par vos services</option>
           <option>Je voudrais un renseignement</option>
         </select>
       </label>
 
-      {formData.objet === "Je suis intéressé(e) par vos services" && (
+      {formData.objet === "Je suis interessé(e) par vos services" && (
         <label className="block">
           <span className="text-md md:text-lg font-semibold">Service concerné</span>
           <select
             name="service"
             value={formData.service}
             onChange={handleChange}
-            className="w-full border p-2 rounded bg-paletteColor3 border-paletteColor1"
+            className="w-full p-3 rounded-lg bg-paletteColor4 border border-paletteColor1 text-sm xs:text-md md:text-lg"
             required
           >
             <option value="Création de site web">Création d'un site web</option>
@@ -113,21 +114,21 @@ const ContactForm = () => {
 
       <label className="block">
         <span className="text-md md:text-lg font-semibold">
-          {formData.objet === "Je suis intéressé(e) par vos services"
+          {formData.objet === "Je suis interessé(e) par vos services"
             ? "Message (facultatif)"
             : "Message (obligatoire)"}
         </span>
         <textarea
           name="message"
           placeholder={
-            formData.objet === "Je suis intéressé(e) par vos services"
+            formData.objet === "Je suis interessé(e) par vos services"
               ? "Faites nous part d'informations supplémentaires si vous le désirez"
               : "Merci de préciser votre message"
           }
           value={formData.message}
           onChange={handleChange}
           rows="6"
-          className="w-full border p-2 rounded resize-none border-paletteColor1"
+          className="w-full p-3 rounded-lg bg-paletteColor4 resize-none border border-paletteColor1 text-sm xs:text-md md:text-lg"
           maxLength={1500}
         />
         <p className="text-right text-md md:text-lg text-smTextWhtColor">
