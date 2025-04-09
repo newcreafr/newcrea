@@ -42,7 +42,7 @@ export default function ResponsiveMenu({ open, setOpen }) {
               <li>
                 <a
                   className="underline-animation"
-                  href="#"
+                  href="/"
                   onClick={() => setOpen(false)}
                 >
                   Accueil
@@ -51,7 +51,7 @@ export default function ResponsiveMenu({ open, setOpen }) {
               <li>
                 <a
                   className="underline-animation"
-                  href="#offers"
+                  href="/#offers"
                   onClick={() => setOpen(false)}
                 >
                   Nos offres
@@ -60,7 +60,7 @@ export default function ResponsiveMenu({ open, setOpen }) {
               <li>
                 <a
                   className="underline-animation"
-                  href="#"
+                  href="/"
                   onClick={() => setOpen(false)}
                 >
                   Nos réalisations

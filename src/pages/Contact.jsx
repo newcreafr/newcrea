@@ -3,10 +3,10 @@ import H1 from "../components/H1.jsx";
 
 const Contact = () => {
   return (
-    <div className="mx-auto mt-16 flex w-[90%] flex-col items-center text-center">
+    <section className="flex w-[90%] flex-col items-center text-center mb-16">
       <H1>Formulaire de contact</H1>
       <ContactForm />
-    </div>
+    </section>
   );
 };
 

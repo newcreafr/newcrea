@@ -86,49 +86,51 @@ export default function Processus() {
   }, [touchStart]);
 
   return (
-    <div className="bg-paletteColor1 py-7 text-center text-paletteColor3">
-      <h2 id="processus" className="w-[90%] xs:w-auto">
-        Un processus simple et efficace
-      </h2>
-      <div
-        id="processus-container"
-        className="mx-auto flex w-full justify-center gap-4 overflow-hidden xs:w-full xs:max-w-[90%] xs:px-2"
-      >
+    <section>
+      <div className="bg-paletteColor1 text-center text-paletteColor3">
+        <h2 id="processus" className="w-[90%] xs:w-auto">
+          Un processus simple et efficace
+        </h2>
         <div
-          className="flex transition-all duration-500 ease-in-out"
-          style={{
-            transform: `translateX(-${currentStep * 100}%)`,
-          }}
+          id="processus-container"
+          className="mx-auto mb-10 flex w-full justify-center gap-4 overflow-hidden xs:w-full xs:max-w-[90%] xs:px-2"
         >
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="w-full flex-shrink-0"
-              style={{ flex: "0 0 100%" }}
-            >
-              <ProcessusStep
-                num={step.num}
-                title={step.title}
-                desc={step.desc}
-              />
-            </div>
-          ))}
+          <div
+            className="flex transition-all duration-500 ease-in-out"
+            style={{
+              transform: `translateX(-${currentStep * 100}%)`,
+            }}
+          >
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="w-full flex-shrink-0"
+                style={{ flex: "0 0 100%" }}
+              >
+                <ProcessusStep
+                  num={step.num}
+                  title={step.title}
+                  desc={step.desc}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="pb-10 flex justify-center gap-3">
+          <button
+            className="flex size-12 items-center justify-center rounded-full border-2 border-paletteColor3 bg-paletteColor1 text-2xl text-paletteColor3 transition-all duration-300 ease-in-out hover:border-paletteColor2 hover:text-paletteColor2"
+            onClick={prevStep}
+          >
+            &#60;
+          </button>
+          <button
+            className="flex size-12 items-center justify-center rounded-full border-2 border-paletteColor3 bg-paletteColor1 text-2xl text-paletteColor3 transition-all duration-300 ease-in-out hover:border-paletteColor2 hover:text-paletteColor2"
+            onClick={nextStep}
+          >
+            &#62;
+          </button>
         </div>
       </div>
-      <div className="mt-4 flex justify-center gap-3">
-        <button
-          className="flex size-12 items-center justify-center rounded-full border-2 border-paletteColor3 bg-paletteColor1 text-2xl text-paletteColor3 transition-all duration-300 ease-in-out hover:border-paletteColor2 hover:text-paletteColor2"
-          onClick={prevStep}
-        >
-          &#60;
-        </button>
-        <button
-          className="flex size-12 items-center justify-center rounded-full border-2 border-paletteColor3 bg-paletteColor1 text-2xl text-paletteColor3 transition-all duration-300 ease-in-out hover:border-paletteColor2 hover:text-paletteColor2"
-          onClick={nextStep}
-        >
-          &#62;
-        </button>
-      </div>
-    </div>
+    </section>
   );
 }

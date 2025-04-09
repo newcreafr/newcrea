@@ -3,7 +3,7 @@ import { useState } from "react";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     email: "",
-    objet: "Je voudrais un renseignement",
+    objet: "Je suis interessé(e) par vos services",
     service: "Création de site web",
     message: "",
   });
@@ -57,7 +57,7 @@ const ContactForm = () => {
       setResult(resText);
       setFormData({
         email: "",
-        objet: "Je voudrais un renseignement",
+        objet: "Je suis interessé(e) par vos services",
         service: "",
         message: "",
       });
@@ -77,7 +77,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full border p-2 rounded"
+          className="w-full border p-2 rounded border-paletteColor1"
         />
       </label>
 
@@ -87,10 +87,10 @@ const ContactForm = () => {
           name="objet"
           value={formData.objet}
           onChange={handleChange}
-          className="w-full border p-2 rounded"
+          className="w-full border p-2 rounded bg-paletteColor3 border-paletteColor1"
         >
-          <option>Je voudrais un renseignement</option>
           <option>Je suis intéressé(e) par vos services</option>
+          <option>Je voudrais un renseignement</option>
         </select>
       </label>
 
@@ -101,7 +101,7 @@ const ContactForm = () => {
             name="service"
             value={formData.service}
             onChange={handleChange}
-            className="w-full border p-2 rounded"
+            className="w-full border p-2 rounded bg-paletteColor3 border-paletteColor1"
             required
           >
             <option value="Création de site web">Création d'un site web</option>
@@ -127,7 +127,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           rows="6"
-          className="w-full border p-2 rounded resize-none"
+          className="w-full border p-2 rounded resize-none border-paletteColor1"
           maxLength={1500}
         />
         <p className="text-right text-md md:text-lg text-smTextWhtColor">

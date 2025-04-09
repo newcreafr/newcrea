@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export default function Offer({
+export default function Offre({
   imageSrc,
   altText,
   title,
@@ -26,7 +26,7 @@ export default function Offer({
   );
 }
 
-Offer.propTypes = {
+Offre.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   altText: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
