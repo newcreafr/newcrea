@@ -13,7 +13,13 @@ const Home = () => {
       <PourquoiNous />
       <Processus />
       <FAQ />
-      <CTA />
+      <CTA
+        title="Envie de booster votre présence en ligne ?"
+        desc="Un site web bien pensé peut transformé votre activité."
+        route="contact"
+        cta="Discutons de votre projet"
+        note="(réponse sous 24h)"
+      />
     </>
   );
 };
