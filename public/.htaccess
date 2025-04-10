@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /
+
+# Laisser passer les fichiers ou dossiers réels
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Supprime le slash final sauf si c’est un dossier
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Si une URL sans extension correspond à un fichier .html → redirige vers le fichier
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
