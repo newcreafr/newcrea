@@ -19,6 +19,20 @@ module.exports = {
                 smTextWhtColor: "#475569",
                 smTextDrkColor: "#94a3b8",
             },
+            animation: {
+                'fade-in': 'fadeIn 0.3s ease-out',
+                'fade-out': 'fadeOut 0.3s ease-out forwards',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: 0 },
+                    '100%': { opacity: 1 },
+                },
+                fadeOut: {
+                    '0%': { opacity: 1 },
+                    '100%': { opacity: 0 },
+                },
+            },
         },
     },
     plugins: [

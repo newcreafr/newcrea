@@ -24,7 +24,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className="underline-animation" href="/#offers">
+          <Link className="underline-animation" href="/services">
             Nos offres
           </Link>
         </li>
