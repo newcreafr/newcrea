@@ -22,7 +22,6 @@ module.exports = {
             animation: {
                 'fade-in': 'fadeIn 0.3s ease-out',
                 'fade-out': 'fadeOut 0.3s ease-out forwards',
-                'fade-in-up': 'fadeInUp 0.4s ease-out',
             },
             keyframes: {
                 fadeIn: {
@@ -32,10 +31,6 @@ module.exports = {
                 fadeOut: {
                     '0%': { opacity: 1 },
                     '100%': { opacity: 0 },
-                },
-                fadeInUp: {
-                    '0%': { opacity: 0, transform: 'translateY(10px)' },
-                    '100%': { opacity: 1, transform: 'translateY(0)' },
                 },
             },
         },
