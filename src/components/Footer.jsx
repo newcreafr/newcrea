@@ -57,8 +57,8 @@ export default function Footer() {
               <Link className="footer-link" href="/">
                 Accueil
               </Link>
-              <Link className="footer-link" href="/#offers">
-                Nos offres
+              <Link className="footer-link" href="/services">
+                Nos services
               </Link>
               <Link className="footer-link" href="/">
                 Notre processus de création

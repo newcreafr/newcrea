@@ -14,6 +14,8 @@ export default function Navbar() {
         <img
           className="w-[40px] py-4 md:w-[60px]"
           src="/img/newcrea-logo.svg"
+          width={60}
+          height={60}
           alt="Logo Newcrea"
         />
       </div>
@@ -25,11 +27,11 @@ export default function Navbar() {
         </li>
         <li>
           <Link className="underline-animation" href="/services">
-            Nos offres
+            Nos services
           </Link>
         </li>
         <li>
-          <Link className="underline-animation" href="/">
+          <Link className="underline-animation" href="/realisations">
             Nos réalisations
           </Link>
         </li>

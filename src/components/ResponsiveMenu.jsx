@@ -59,7 +59,7 @@ export default function ResponsiveMenu({ open, setOpen }) {
                   </Link>
                 </li>
                 <li>
-                  <Link className="underline-animation" href="/" onClick={() => setOpen(false)}>
+                  <Link className="underline-animation" href="/realisations" onClick={() => setOpen(false)}>
                     Nos réalisations
                   </Link>
                 </li>

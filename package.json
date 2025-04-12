@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "cross-env ANALYZE=true next build",
+    "build-analyse": "cross-env ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint"
   },

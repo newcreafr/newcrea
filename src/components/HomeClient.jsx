@@ -32,13 +32,13 @@ export default function HomeClient() {
                     <div className="flex gap-2 text-sm xs:gap-4 xs:text-base">
                         <Link
                             className="transform rounded-full border-2 border-paletteColor1 bg-white px-4 py-2 text-paletteColor1 transition-all duration-300 ease-in-out hover:origin-center hover:scale-105 hover:bg-paletteColor1 hover:text-paletteColor3"
-                            href="#offers"
+                            href="/services"
                         >
-                            Découvrir nos offres
+                            Découvrir nos services
                         </Link>
                     </div>
                 </div>
-                <LazyVideo className="m-16 mx-auto w-[90%] xs:w-[60%]" link="/videos/presentation.mp4" />
+                <LazyVideo className="m-16 mx-auto xs:w-[60%]" link="/videos/presentation.mp4" />
             </section>
 
             <section className="w-[90%]">
@@ -78,23 +78,23 @@ export default function HomeClient() {
                     <h2>
                         Pourquoi choisir <span className="text-primary">NewCrea</span> ?
                     </h2>
-                    <p className="text-gray-600">
+                    <p>
                         Une approche humaine, stratégique et adaptée à votre réalité.
                     </p>
                 </div>
                 <div className="flex h-auto flex-col lg:items-stretch items-center justify-between gap-4 lg:flex-row">
                     <PourquoiNousSection
-                        img="🔍"
+                        img="/img/analyse-personnalisee.svg"
                         title="Analyse personnalisée"
                         desc="Avant toute proposition, nous étudions votre activité, vos enjeux et vos objectifs pour vous apporter une solution vraiment pertinente."
                     />
                     <PourquoiNousSection
-                        img="🤝"
+                        img="/img/accompagnement-humain.svg"
                         title="Accompagnement humain"
                         desc="Nous échangeons avec vous sans jargon technique, en toute transparence, pour bâtir un projet digital à votre image."
                     />
                     <PourquoiNousSection
-                        img="💸"
+                        img="/img/prix-justes.svg"
                         title="Des prix justes"
                         desc="Nos offres sont pensées pour les TPE/PME : efficacité, visibilité et rentabilité sans vous ruiner. Nous vous aidons même à obtenir des subventions."
                     />

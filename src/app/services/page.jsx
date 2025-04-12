@@ -1,10 +1,11 @@
 import H1 from "@/components/H1";
 import ServiceSection from "@/components/ServiceSection";
+import CTA from "@/components/CTA";
 
 export default function Services() {
     return (
         <>
-            <section>
+            <section className="w-[90%] mx-auto">
                 <H1>Nos services</H1>
                 <p className="text-center">Découvrez sans plus attendre les services que nous proposons !</p>
             </section>
@@ -31,6 +32,13 @@ export default function Services() {
                     reverse={false}
                 />
             </section>
+            <CTA
+                title="Besoin d’un site web ou d’un logo ?"
+                desc="Parlons ensemble de vos besoins ! Chez NewCrea, chaque projet commence par une écoute attentive et des conseils concrets."
+                route="/contact"
+                cta="Discutons de votre projet"
+                note="(réponse sous 24h)"
+            />
         </>
     );
 }
