@@ -8,7 +8,6 @@ import Link from "next/link";
 import Offre from "@/components/Offre";
 import LazyVideo from "@/components/LazyVideo";
 
-// Chargement dynamique des composants lourds
 const Processus = dynamic(() => import("@/components/Processus"), {
     loading: () => <Spinner />,
 });
@@ -22,26 +21,24 @@ const CTA = dynamic(() => import("@/components/CTA"), {
 export default function HomeClient() {
     return (
         <>
-            <section className="w-[90%]">
+            <section>
                 <div className="flex flex-col items-center text-center">
                     <H1>Votre Agence Web à Nancy</H1>
-                    <p className="my-7">
+                    <p className="my-7 normal-text">
                         Développez une présence digitale qui vous ressemble, grâce à nos
                         solutions modernes et sur mesure.
                     </p>
-                    <div className="flex gap-2 text-sm xs:gap-4 xs:text-base">
-                        <Link
-                            className="transform rounded-full border-2 border-paletteColor1 bg-white px-4 py-2 text-paletteColor1 transition-all duration-300 ease-in-out hover:origin-center hover:scale-105 hover:bg-paletteColor1 hover:text-paletteColor3"
-                            href="/services"
-                        >
-                            Découvrir nos services
-                        </Link>
-                    </div>
+                    <Link
+                        className="normal-text transform rounded-full border-2 border-paletteColor1 bg-white px-4 py-2 text-paletteColor1 transition-all duration-300 ease-in-out hover:origin-center hover:scale-105 hover:bg-paletteColor1 hover:text-paletteColor3"
+                        href="/services"
+                    >
+                        Découvrir nos services
+                    </Link>
                 </div>
                 <LazyVideo className="m-16 mx-auto xs:w-[60%]" link="/videos/presentation.mp4" />
             </section>
 
-            <section className="w-[90%]">
+            <section>
                 <div className="text-center">
                     <h2 id="offers">Ce que nous proposons</h2>
                 </div>
@@ -52,7 +49,7 @@ export default function HomeClient() {
                         title="Création de votre site"
                         description="Présentez votre activité, attirez de nouveaux clients ou démarquez-vous en ligne grâce à un site qui reflète parfaitement votre image. Nous concevons pour vous un outil unique et performant qui fera la différence."
                         price={900}
-                        route={"services/creation-site-web"}
+                        route={"/services/creation-site-web"}
                     />
                     <Offre
                         imageSrc="/img/design-logo.svg"
@@ -60,7 +57,7 @@ export default function HomeClient() {
                         title="Refonte de votre site"
                         description="Votre site ne reflète plus vos ambitions ? Nous le transformons pour qu’il devienne un atout : un design percutant, une expérience utilisateur fluide et des performances optimisées pour marquer les esprits."
                         price={500}
-                        route={"services/refonte-site-web"}
+                        route={"/services/refonte-site-web"}
                     />
                     <Offre
                         imageSrc="/img/design-logo.svg"
@@ -68,17 +65,17 @@ export default function HomeClient() {
                         title="Création de votre logo"
                         description="Offrez une identité forte à votre entreprise avec un logo unique et mémorable. Nous créons un design sur-mesure qui reflète vos valeurs et capte l’attention dès le premier regard."
                         price={50}
-                        route={"/"}
+                        route={"/services/creation-logo"}
                     />
                 </div>
             </section>
 
-            <section className="w-[90%] mx-auto py-16">
+            <section className="mx-auto py-16">
                 <div className="text-center mb-12">
                     <h2>
-                        Pourquoi choisir <span className="text-primary">NewCrea</span> ?
+                        Pourquoi choisir NewCrea ?
                     </h2>
-                    <p>
+                    <p className="normal-text">
                         Une approche humaine, stratégique et adaptée à votre réalité.
                     </p>
                 </div>
@@ -105,10 +102,9 @@ export default function HomeClient() {
             <FAQ />
             <CTA
                 title="Envie de booster votre présence en ligne ?"
-                desc="Un site web bien pensé peut transformé votre activité."
+                desc="Un site web bien pensé peut transformer votre activité."
                 route="contact"
                 cta="Discutons de votre projet"
-                note="(réponse sous 24h)"
             />
         </>
     );

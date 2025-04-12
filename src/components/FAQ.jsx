@@ -36,7 +36,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="w-[90%]">
+    <section>
       <div className="text-center">
         <h2 >
           Vos questions fréquentes
@@ -54,7 +54,7 @@ const FAQSection = () => {
             >
               <button
                 onClick={() => toggle(index)}
-                className={`w-full flex justify-between items-center text-left text-md md:text-lg font-medium text-paletteColor1 transition-colors duration-300 ${
+                className={`w-full flex justify-between items-center text-left normal-text font-medium text-paletteColor1 transition-colors duration-300 ${
                   isOpen ? "text-paletteColor2" : ""
                 }`}
               >
@@ -75,7 +75,7 @@ const FAQSection = () => {
                 }}
                 className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
               >
-                <p className="text-md text-smTextWhtColor mt-3">{item.answer}</p>
+                <p className="small-text text-smTextWhtColor mt-3">{item.answer}</p>
               </div>
             </div>
           );

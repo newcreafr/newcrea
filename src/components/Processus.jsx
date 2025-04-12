@@ -88,7 +88,7 @@ export default function Processus() {
   }, [touchStart]);
 
   return (
-    <section>
+    <section className="w-full">
       <div className="bg-paletteColor1 text-center text-paletteColor3">
         <h2 id="processus" className="w-[90%] xs:w-auto">
           Un processus simple et efficace

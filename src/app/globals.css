@@ -18,7 +18,7 @@
     }
 
     h2 {
-        @apply relative my-10 inline-block text-center text-lg font-bold underline decoration-paletteColor2 decoration-2 xs:text-xl xs:no-underline sm:text-2xl;
+        @apply relative my-10 inline-block text-center text-xl font-bold underline decoration-paletteColor2 decoration-2 xs:no-underline md:text-2xl lg:text-3xl;
     }
 
     h2::before,
@@ -42,6 +42,18 @@
         @apply absolute bottom-4 left-1/2 h-[2px] w-[30px] -translate-x-1/2 bg-paletteColor2 content-[''] md:h-[4px] md:w-[50px];
     }
 
+    .normal-text {
+        @apply text-base md:text-lg lg:text-xl;
+    }
+
+    .big-text {
+        @apply text-xl md:text-2xl lg:text-3xl;
+    }
+
+    .small-text {
+        @apply text-sm md:text-base lg:text-lg;
+    }
+
     img {
         @apply select-none;
     }
@@ -52,14 +64,14 @@
     }
 
     h1 {
-        @apply text-[2rem] font-bold leading-8 xs:text-4xl md:text-5xl;
+        @apply text-3xl font-bold leading-8 md:text-4xl lg:text-5xl;
     }
 
     h3 {
-        @apply text-base font-bold xs:text-lg sm:text-xl;
+        @apply text-lg font-bold md:text-xl lg:text-2xl;
     }
 
     section {
-        @apply mx-auto mt-16;
+        @apply mx-auto mt-16 w-[90%];
     }
 }

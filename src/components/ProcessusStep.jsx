@@ -5,7 +5,7 @@ export default function ProcessusStep({ num, title, desc }) {
         {num}
       </div>
       <h3 className="text-paletteColor2">{title}</h3>
-      <p className="text-smTextDrkColor">{desc}</p>
+      <p className="text-smTextDrkColor small-text">{desc}</p>
     </div>
   );
 }

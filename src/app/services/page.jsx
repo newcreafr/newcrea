@@ -5,11 +5,11 @@ import CTA from "@/components/CTA";
 export default function Services() {
     return (
         <>
-            <section className="w-[90%] mx-auto">
+            <section className="mx-auto">
                 <H1>Nos services</H1>
-                <p className="text-center">Découvrez sans plus attendre les services que nous proposons !</p>
+                <p className="text-center normal-text">Découvrez sans plus attendre les services que nous proposons !</p>
             </section>
-            <section className="w-[90%] mx-auto">
+            <section className="mx-auto">
                 <ServiceSection
                     title="Création de site web"
                     desc="Nous concevons des sites web sur mesure, modernes, optimisés, pensés pour répondre à vos besoins et objectifs. Que ce soit pour présenter vos services, vendre vos produits ou gagner en visibilité locale, on s'adapte à vos besoins."
@@ -37,7 +37,6 @@ export default function Services() {
                 desc="Parlons ensemble de vos besoins ! Chez NewCrea, chaque projet commence par une écoute attentive et des conseils concrets."
                 route="/contact"
                 cta="Discutons de votre projet"
-                note="(réponse sous 24h)"
             />
         </>
     );

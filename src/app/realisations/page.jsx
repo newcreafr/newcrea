@@ -4,21 +4,21 @@ import CTA from "@/components/CTA.jsx";
 const Realisations = () => {
     return (
         <>
-            <section className="w-[90%] text-center">
+            <section className="text-center">
                 <H1>Nos réalisations</H1>
-                <p className="mt-6 text-lg max-w-3xl mx-auto">
+                <p className="mt-6 normal-text max-w-3xl mx-auto">
                     Des projets concrets, des résultats visibles.
                     Chez NewCrea, chaque réalisation est conçue sur mesure pour répondre aux besoins réels de nos clients.
                 </p>
             </section>
 
-            <section className="w-[90%] text-center">
+            <section className="text-center">
                 <h2>Bientôt en ligne</h2>
-                <p className="max-w-2xl mx-auto mb-6">
+                <p className="max-w-2xl mx-auto mb-6 normal-text">
                     Cette page vous présentera prochainement nos projets les plus marquants : sites web, refontes, logos et identités visuelles.
                     L’occasion de découvrir notre travail concret, nos méthodes, et les résultats obtenus.
                 </p>
-                <p className="max-w-xl mx-auto">
+                <p className="max-w-xl mx-auto normal-text">
                     Revenez bientôt pour vous inspirer ou contactez-nous directement pour en discuter.
                 </p>
             </section>

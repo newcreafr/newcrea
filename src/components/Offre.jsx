@@ -15,10 +15,10 @@ export default function Offre({
         <img className="size-10" src={imageSrc} alt={altText}  loading="lazy"/>
         <div className="flex flex-grow flex-col items-start justify-start gap-5">
           <h3>{title}</h3>
-          <p className="text-smTextWhtColor">{description}</p>
+          <p className="text-smTextWhtColor small-text">{description}</p>
           <div className="mt-auto">
-            <p className="mb-5 font-semibold">À partir de {price}€ HT</p>
-            <Link className="underline-animation text-paletteColor2" href={route}>
+            <p className="mb-5 font-semibold small-text">À partir de {price}€ HT</p>
+            <Link className="small-text underline-animation text-paletteColor2" href={route}>
               En savoir plus
             </Link>
           </div>
