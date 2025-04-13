@@ -64,7 +64,7 @@
     }
 
     h1 {
-        @apply text-3xl font-bold leading-8 md:text-4xl lg:text-5xl;
+        @apply text-3xl font-bold leading-8 md:text-4xl lg:text-5xl pt-[72px];
     }
 
     h3 {

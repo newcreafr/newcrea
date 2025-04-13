@@ -1,71 +1,157 @@
-import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+"use client";
 
-export default function ResponsiveMenu({ open, setOpen }) {
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+
+export default function ResponsiveMenu({ open, setOpen, headerRef }) {
+  const [servicesOpen, setServicesOpen] = useState(false);
   const menuRef = useRef(null);
-  const [show, setShow] = useState(false);
+
+  const toggleServices = () => setServicesOpen((prev) => !prev);
+  const closeMenu = () => setOpen(false);
 
   useEffect(() => {
-    if (open) {
-      setShow(true);
-    }
+    const handleClickOutside = (event) => {
+      const menu = menuRef.current;
+      const header = headerRef.current;
 
-    function handleClickOutside(event) {
       if (
-          menuRef.current &&
-          !menuRef.current.contains(event.target) &&
-          !document.getElementById("hbg-menu")?.contains(event.target)
+          menu &&
+          !menu.contains(event.target) &&
+          header &&
+          !header.contains(event.target)
       ) {
         setOpen(false);
       }
-    }
+    };
+
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setOpen(false);
+      }
+    };
 
     if (open) {
       document.addEventListener("mousedown", handleClickOutside);
+      window.addEventListener("resize", handleResize);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("resize", handleResize);
     };
-  }, [open, setOpen]);
-
-  const handleAnimationEnd = () => {
-    if (!open) {
-      setShow(false);
-    }
-  };
+  }, [open, headerRef, setOpen]);
 
   return (
-      show && (
-          <div
-              onAnimationEnd={handleAnimationEnd}
-              className={`absolute left-0 top-16 z-20 h-auto w-[300px] mins:left-auto mins:right-0 mins:w-[50%] ${
-                  open ? "animate-fade-in" : "animate-fade-out"
-              }`}
+      <div
+          ref={menuRef}
+          className={`fixed top-0 right-0 mt-[72px] z-40 w-full sm:w-[300px] rounded-bl-xl text-paletteColor3 transform transition-transform duration-300 ${
+              open ? "translate-x-0" : "translate-x-full"
+          }`}
+      >
+        {/* Navigation */}
+        <div className="pl-16 py-6 flex flex-col gap-6 text-base bg-paletteColor1">
+          <Link
+              href="/"
+              onClick={closeMenu}
+              className="underline-animation inline-block w-fit text-base"
           >
+            Accueil
+          </Link>
+
+          {/* Nos services */}
+          <div>
+            <div className="flex items-center gap-2">
+              <Link
+                  href="/services"
+                  onClick={closeMenu}
+                  className="underline-animation inline-block w-fit text-base"
+              >
+                Nos services
+              </Link>
+              <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleServices();
+                  }}
+                  aria-label="Toggle services"
+                  className="text-xl text-paletteColor3 hover:text-paletteColor2 transition"
+              >
+                <IoIosArrowDown
+                    className={`transition-transform duration-300 ${
+                        servicesOpen ? "rotate-180" : ""
+                    }`}
+                />
+              </button>
+            </div>
+
             <div
-                ref={menuRef}
-                className="bg-paletteColor1 text-paletteColor3 py-6 text-sm font-semibold mins:rounded-bl-3xl xs:text-base md:hidden"
+                className={`transition-all duration-300 ease-in-out  ${
+                    servicesOpen ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0"
+                }`}
             >
-              <ul className="flex flex-col items-center justify-center gap-6">
-                <li>
-                  <Link className="underline-animation" href="/" onClick={() => setOpen(false)}>
-                    Accueil
-                  </Link>
-                </li>
-                <li>
-                  <Link className="underline-animation" href="/services" onClick={() => setOpen(false)}>
-                    Nos services
-                  </Link>
-                </li>
-                <li>
-                  <Link className="underline-animation" href="/realisations" onClick={() => setOpen(false)}>
-                    Nos réalisations
-                  </Link>
-                </li>
+              <ul className="space-y-2 pl-2 text-smTextDrkColor">
+                {[
+                  { href: "/services/creation-site-web", label: "Création de site web" },
+                  { href: "/services/refonte-site-web", label: "Refonte de site web" },
+                  { href: "/services/creation-logo", label: "Création de logo" },
+                ].map(({ href, label }) => (
+                    <li key={href}>
+                      <Link
+                          href={href}
+                          onClick={closeMenu}
+                          className="underline-animation inline-block w-fit text-base"
+                      >
+                        {label}
+                      </Link>
+                    </li>
+                ))}
               </ul>
             </div>
           </div>
-      )
+
+          {/* Autres liens */}
+          <Link
+              href="/realisations"
+              onClick={closeMenu}
+              className="underline-animation inline-block w-fit text-base"
+          >
+            Nos réalisations
+          </Link>
+          <Link
+              href="/subventions"
+              onClick={closeMenu}
+              className="underline-animation inline-block w-fit text-base"
+          >
+            Subventions
+          </Link>
+          <Link
+              href="/a-propos"
+              onClick={closeMenu}
+              className="underline-animation inline-block w-fit text-base"
+          >
+            À propos
+          </Link>
+          <Link
+              href="/blog"
+              onClick={closeMenu}
+              className="underline-animation inline-block w-fit text-base"
+          >
+            Blog
+          </Link>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-auto flex justify-center items-center px-6 py-6 bg-paletteColor1 rounded-bl-xl">
+          <Link
+              href="/contact"
+              onClick={closeMenu}
+              className="text-base inline-flex items-center justify-center rounded-full bg-paletteColor2 px-6 py-2 text-paletteColor3 font-medium transition duration-300 ease-in-out hover:scale-105 hover:bg-paletteColor3 hover:text-paletteColor1"
+          >
+            Contactez-nous
+          </Link>
+        </div>
+      </div>
   );
 }
