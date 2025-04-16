@@ -6,14 +6,14 @@ const RefonteSite = () => {
         <>
             <section className="text-center">
                 <H1>Refonte de site web</H1>
-                <p className="mt-6 normal-text max-w-3xl mx-auto">
-                    Votre site ne reflète plus votre image ? Il est lent, peu clair, ou pas adapté au mobile ?
-                    Chez NewCrea, nous modernisons votre site web pour en faire un véritable outil de communication, de
-                    confiance et de conversion.
+                <p className="normal-text max-w-3xl mx-auto">
+                    Ce que vos visiteurs voient en ligne, c’est ce qu’ils pensent de vous.<br/>
+                    Un site mal conçu peut nuire à votre <strong>crédibilité</strong>, même si votre travail est excellent.<br/><br/>
+                    Chez <strong>NewCrea</strong>, on reconstruit votre site avec un design moderne, une navigation claire et un message qui inspire confiance.
                 </p>
             </section>
 
-            <div className="w-[90%] mx-auto max-w-[400px] my-24">
+            <div className="w-[90%] mx-auto max-w-[400px] mt-16">
                 <img
                     src="/img/refonte-site-web.svg"
                     alt="Illustration refonte de site web"
@@ -22,11 +22,12 @@ const RefonteSite = () => {
                 />
             </div>
 
-            <section className="text-center py-16">
+            <section className="text-center">
                 <h2>Pourquoi envisager une refonte ?</h2>
                 <p className="max-w-2xl mx-auto mb-12 normal-text">
-                    Un site obsolète peut nuire à votre image, faire fuir des clients, et nuire à votre référencement.
-                    Aujourd’hui, il est essentiel d’avoir une plateforme claire, rapide et à jour.
+                    Si votre site donne une mauvaise impression, c’est votre entreprise qu’on juge.
+                    Un design daté, une navigation confuse ou une mauvaise adaptation mobile peuvent vous faire perdre des opportunités.<br/>
+                    Une refonte permet de repartir sur des bases solides, alignées avec vos objectifs.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left">
@@ -35,23 +36,23 @@ const RefonteSite = () => {
                         <ul className="space-y-3 ">
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-green-500 text-xl select-none">✔</span>
-                                Une expérience utilisateur fluide et intuitive
+                                Une navigation fluide et agréable pour vos visiteurs
                             </li>
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-green-500 text-xl select-none">✔</span>
-                                Des performances boostées (chargement rapide, responsive)
+                                Un site rapide, responsive et performant
                             </li>
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-green-500 text-xl select-none">✔</span>
-                                Un design moderne, clair et professionnel
+                                Un design clair, moderne et professionnel
                             </li>
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-green-500 text-xl select-none">✔</span>
-                                Un meilleur positionnement Google (SEO)
+                                Une meilleure visibilité sur les moteurs de recherche (SEO)
                             </li>
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-green-500 text-xl select-none">✔</span>
-                                Une image en phase avec votre entreprise actuelle
+                                Une image cohérente avec votre entreprise actuelle
                             </li>
                         </ul>
                     </div>
@@ -61,33 +62,34 @@ const RefonteSite = () => {
                         <ul className="space-y-3 ">
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-red-500 text-xl select-none">✖</span>
-                                Perte de crédibilité auprès de vos visiteurs
+                                Une perte de crédibilité auprès de vos visiteurs
                             </li>
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-red-500 text-xl select-none">✖</span>
-                                Navigation difficile, surtout sur mobile
+                                Une navigation difficile, notamment sur mobile
                             </li>
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-red-500 text-xl select-none">✖</span>
-                                Mauvais référencement sur Google
+                                Un mauvais référencement sur les moteurs de recherche
                             </li>
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-red-500 text-xl select-none">✖</span>
-                                Moins de prospects, plus de concurrents visibles
+                                Moins de prospects… et plus de place laissée à vos concurrents
                             </li>
                             <li className="flex items-start gap-2 small-text">
                                 <span className="text-red-500 text-xl select-none">✖</span>
-                                Site non conforme ou non sécurisé
+                                Un site potentiellement non sécurisé ou non conforme
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section className="text-center py-16">
+            <section className="text-center">
                 <h2>Votre site est-il dépassé ?</h2>
                 <p className="normal-text max-w-xl mx-auto mb-8">
-                    Vous avez des doutes ? Il existe des outils gratuits pour tester votre site comme PageSpeed Insights :
+                    Vous vous demandez si votre site est toujours à la hauteur ?<br/>
+                    Vérifiez en quelques secondes les performances de votre site grâce à un <strong>outil gratuit</strong> comme PageSpeed Insights.
                 </p>
                 <a
                     href="https://pagespeed.web.dev"
@@ -102,9 +104,8 @@ const RefonteSite = () => {
 
             <CTA
                 title="Besoin de moderniser votre site web ?"
-                desc="Discutons ensemble des améliorations possibles pour redonner à votre site tout son impact."
                 route="/contact"
-                cta="Faites une demande"
+                cta="Discutons-en"
             />
         </>
     );

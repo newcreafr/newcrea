@@ -95,7 +95,7 @@ export default function ResponsiveMenu({ open, setOpen, headerRef }) {
                 {[
                   { href: "/services/creation-site-web", label: "Création de site web" },
                   { href: "/services/refonte-site-web", label: "Refonte de site web" },
-                  { href: "/services/creation-logo", label: "Création de logo" },
+                  { href: "/services/creation-identite-visuelle", label: "Création d'identité visuelle" },
                 ].map(({ href, label }) => (
                     <li key={href}>
                       <Link
@@ -120,11 +120,18 @@ export default function ResponsiveMenu({ open, setOpen, headerRef }) {
             Nos réalisations
           </Link>
           <Link
-              href="/subventions"
+              href="/tarifs"
               onClick={closeMenu}
               className="underline-animation inline-block w-fit text-base"
           >
-            Subventions
+            Tarifs
+          </Link>
+          <Link
+              href="/aides"
+              onClick={closeMenu}
+              className="underline-animation inline-block w-fit text-base"
+          >
+            Aides
           </Link>
           <Link
               href="/a-propos"
@@ -132,13 +139,6 @@ export default function ResponsiveMenu({ open, setOpen, headerRef }) {
               className="underline-animation inline-block w-fit text-base"
           >
             À propos
-          </Link>
-          <Link
-              href="/blog"
-              onClick={closeMenu}
-              className="underline-animation inline-block w-fit text-base"
-          >
-            Blog
           </Link>
         </div>
 

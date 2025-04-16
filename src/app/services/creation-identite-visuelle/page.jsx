@@ -5,14 +5,14 @@ const CreationLogo = () => {
     return (
         <>
             <section className="text-center">
-                <H1>Création de logo</H1>
-                <p className="normal-text mt-6 max-w-3xl mx-auto">
+                <H1>Création d'identité visuelle</H1>
+                <p className="normal-text max-w-3xl mx-auto">
                     Un logo simple, clair, et reconnaissable en un clin d’œil.<br/>
                     Chez NewCrea, nous concevons des identités visuelles modernes, épurées, et adaptées à tous les supports : site web, réseaux sociaux, cartes de visite, enseignes...
                 </p>
             </section>
 
-            <div className="w-[90%] mx-auto max-w-[400px] my-20">
+            <div className="w-[90%] mx-auto max-w-[400px] mt-16">
                 <img
                     src="/img/creation-logo.svg"
                     alt="Illustration création de logo"
@@ -21,7 +21,7 @@ const CreationLogo = () => {
                 />
             </div>
 
-            <section className="text-center py-16">
+            <section className="text-center">
                 <h2>Des logos polyvalents, pensés pour durer</h2>
                 <p className="max-w-2xl mx-auto normal-text">
                     Nos créations sont optimisées pour être lisibles et impactantes, même en petit format.
@@ -29,7 +29,7 @@ const CreationLogo = () => {
                 </p>
             </section>
 
-            <section className="text-center py-16">
+            <section className="text-center">
                 <h2>Des exemples à venir</h2>
                 <p className="max-w-2xl mx-auto normal-text">
                     La page dédiée à nos réalisations sera bientôt en ligne.

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ServiceSection = ({ title, desc, img, route, reverse }) => {
     return (
-        <div className={`flex flex-col align-center lg:flex-row ${reverse ? 'lg:flex-row-reverse' : ''} items-center gap-8 py-12`}>
+        <div className={`flex flex-col align-center lg:flex-row ${reverse ? 'lg:flex-row-reverse' : ''} items-center gap-8`}>
             <div className="w-full lg:w-2/3 px-4 text-center">
                 <h2>{title}</h2>
                 <p className="mb-12 normal-text">{desc}</p>

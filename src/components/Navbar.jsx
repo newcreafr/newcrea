@@ -5,12 +5,42 @@ import Link from "next/link";
 import { MdMenu, MdClose } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import ResponsiveMenu from "./ResponsiveMenu";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
     const [isHovered, setIsHovered] = useState(false);
     const [open, setOpen] = useState(false);
     const headerRef = useRef(null);
     const servicesMenuRef = useRef(null);
+
+    const pathname = usePathname();
+
+    const getPageTitle = (path) => {
+        switch (path) {
+            case "/":
+                return "Accueil";
+            case "/services/":
+                return "Nos services";
+            case "/services/creation-site-web/":
+                return "Création de site web";
+            case "/services/refonte-site-web/":
+                return "Refonte de site web";
+            case "/services/creation-identite-visuelle/":
+                return "Création d'identité visuelle";
+            case "/realisations/":
+                return "Nos réalisations";
+            case "/tarifs/":
+                return "Tarifs";
+            case "/aides/":
+                return "Aides";
+            case "/a-propos/":
+                return "À propos";
+            case "/contact/":
+                return "Contact";
+            default:
+                return "";
+        }
+    };
 
     // Ferme le sous-menu si clic en dehors
     useEffect(() => {
@@ -30,18 +60,23 @@ export default function Navbar() {
         <header ref={headerRef} className="relative">
             <nav className="mx-auto flex w-[90%] items-center justify-between py-4">
                 {/* Logo */}
-                <img
-                    src="/img/newcrea-logo.svg"
-                    alt="Logo Newcrea"
-                    className={`w-[40px] md:w-[60px] transition-transform duration-500 ${
-                        open ? "scale-110 rotate-[5deg]" : ""
-                    }`}
-                />
+                <Link href="/">
+                    <img
+                        src="/img/newcrea-logo.svg"
+                        alt="Logo Newcrea"
+                        className={`w-[40px] md:w-[60px] transition-transform duration-500 ${
+                            open ? "scale-110 rotate-[5deg]" : ""
+                        }`}
+                    />
+                </Link>
 
                 {/* Liens Desktop */}
+                <p className="inline-block xl:hidden text-smTextDrkColor text-base font-medium absolute left-1/2 transform -translate-x-1/2 select-none">
+                    {getPageTitle(pathname)}
+                </p>
                 <ul className="hidden items-center gap-16 xl:flex">
                     <li>
-                        <Link
+                    <Link
                             className="underline-animation text-paletteColor3 text-base"
                             href="/"
                         >
@@ -76,7 +111,7 @@ export default function Navbar() {
                         </div>
 
                         <div
-                            className={`absolute top-full left-0 mt-3 w-64 rounded-xl bg-paletteColor1 shadow-2xl ring-1 ring-black/10 transition-all duration-300 ease-in-out z-50 ${
+                            className={`absolute top-full left-0 mt-3 w-72 rounded-xl bg-paletteColor1 shadow-2xl ring-1 ring-black/10 transition-all duration-300 ease-in-out z-50 ${
                                 isHovered ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                             }`}
                         >
@@ -99,24 +134,16 @@ export default function Navbar() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/services/creation-logo"
+                                        href="/services/creation-identite-visuelle"
                                         className="text-paletteColor3 underline-animation inline-block mx-4"
                                     >
-                                        Création de logo
+                                        Création d'identité visuelle
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                     </li>
 
-                    <li>
-                        <Link
-                            className="underline-animation text-paletteColor3 text-base"
-                            href="/subventions"
-                        >
-                            Subventions
-                        </Link>
-                    </li>
                     <li>
                         <Link
                             className="underline-animation text-paletteColor3 text-base"
@@ -128,17 +155,25 @@ export default function Navbar() {
                     <li>
                         <Link
                             className="underline-animation text-paletteColor3 text-base"
-                            href="/a-propos"
+                            href="/tarifs"
                         >
-                            À propos
+                            Tarifs
                         </Link>
                     </li>
                     <li>
                         <Link
                             className="underline-animation text-paletteColor3 text-base"
-                            href="/blog"
+                            href="/aides"
                         >
-                            Blog
+                            Aides
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className="underline-animation text-paletteColor3 text-base"
+                            href="/a-propos"
+                        >
+                            À propos
                         </Link>
                     </li>
                 </ul>

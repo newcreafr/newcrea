@@ -3,7 +3,7 @@ import H1 from "@/components/H1";
 
 const Contact = () => {
     return (
-        <section className="mx-auto max-w-4xl py-12 text-center">
+        <section className="mx-auto max-w-4xl text-center">
             <H1>Contactez-nous</H1>
 
             <div className="bg-paletteColor1  p-5 rounded-xl flex flex-col gap-4">

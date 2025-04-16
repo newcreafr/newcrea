@@ -6,14 +6,14 @@ const CreationSite = () => {
         <>
             <section className="text-center">
                 <H1>Création de site web sur-mesure</H1>
-                <p className="mt-6 normal-text max-w-3xl mx-auto">
-                    Un site web bien conçu, c’est plus qu’une vitrine. C’est un véritable levier de croissance pour
-                    attirer de
-                    nouveaux clients, rassurer vos prospects, et vous démarquer sur internet.
+                <p className="normal-text max-w-3xl mx-auto">
+                    Un <strong>site internet</strong> bien pensé, ce n’est pas juste une vitrine.<br/>
+                    C’est un <strong>véritable levier</strong> pour faire grandir votre activité : attirer de nouveaux clients, rassurer vos prospects et affirmer votre présence en ligne.<br/><br/>
+                    Chez <strong>NewCrea</strong>, on conçoit des sites sur mesure, pensés pour être utiles, efficaces et vraiment alignés avec ce que vous êtes.
                 </p>
             </section>
 
-            <div className="w-[90%] mx-auto max-w-[400px] my-24">
+            <div className="w-[90%] mx-auto max-w-[400px] mt-16">
                 <img
                     src="/img/creation-site-web.svg"
                     alt="Illustration création de site web"
@@ -22,34 +22,73 @@ const CreationSite = () => {
                 />
             </div>
 
-            <section className="text-center py-16">
-                <h2>Pourquoi avoir un site web ?</h2>
-                <p className="max-w-2xl mx-auto normal-text">
-                    Être trouvé facilement sur Google, présenter clairement vos services, renforcer votre crédibilité,
-                    automatiser vos rendez-vous, être accessible depuis tous les supports (mobile, tablette,
-                    ordinateur)...
+            <section className="text-center ">
+                <h2>
+                    Pourquoi avoir un site web ?
+                </h2>
+
+                <p className="normal-text font-semibold">
+                    Être visible, gagner du temps, inspirer confiance.
                 </p>
+
+                <p className="normal-text  mt-2 mb-4">
+                    Avoir un site web, c’est :
+                </p>
+
+                <ul className="max-w-xl mx-auto grid gap-3 text-left">
+                    <li className="flex items-start gap-3 small-text">
+                        <span className="text-green-500 text-xl">✔</span>
+                        Être facilement trouvé sur les moteurs de recherche
+                    </li>
+                    <li className="flex items-start gap-3 small-text">
+                        <span className="text-green-500 text-xl">✔</span>
+                        Présenter vos services de manière claire et professionnelle
+                    </li>
+                    <li className="flex items-start gap-3 small-text">
+                        <span className="text-green-500 text-xl">✔</span>
+                        Renforcer votre crédibilité
+                    </li>
+                    <li className="flex items-start gap-3 small-text">
+                        <span className="text-green-500 text-xl">✔</span>
+                        Simplifier la prise de contact ou de rendez-vous
+                    </li>
+                    <li className="flex items-start gap-3 small-text">
+                        <span className="text-green-500 text-xl">✔</span>
+                        Être accessible partout : mobile, tablette, ordinateur
+                    </li>
+                </ul>
             </section>
 
-            <section className="text-center py-16">
-                <h2>Des aides pour réduire vos coûts</h2>
-                <p className="max-w-xl mx-auto mb-4 normal-text">
-                    Saviez-vous que des subventions peuvent couvrir une partie de votre projet web ? Vous pouvez
-                    bénéficier
-                    d’aides régionales, de crédits d’impôt ou de dispositifs publics pour financer votre présence en
-                    ligne.
-                </p>
-                <p className="max-w-xl mx-auto normal-text">
-                    Testez votre éligibilité gratuitement grâce à notre formulaire rapide et sans engagement.
-                </p>
-                <p className="max-w-xl mx-auto normal-text"><br/>Le formulaire n'est pas encore disponible.</p>
+
+            <section className="text-center">
+                <h2 className="text-3xl font-bold mb-4 relative inline-block">
+                    Des aides pour réduire vos coûts
+                </h2>
+
+                <div className="max-w-2xl mx-auto space-y-4">
+                    <p className="normal-text">
+                        Saviez-vous qu’il existe des subventions pour financer une partie de votre site web ?
+                        Vous pouvez bénéficier d’aides régionales, de crédits d’impôt ou encore de dispositifs publics
+                        pour soutenir votre présence en ligne.
+                    </p>
+
+                    <p className="normal-text">
+                        Chez NewCrea, on vous aide à identifier ces aides et à en profiter facilement.
+                        Un formulaire gratuit et sans engagement vous permettra bientôt de tester votre éligibilité en
+                        quelques clics.
+                    </p>
+                    <br/>
+                    <p className="normal-text">
+                        Le formulaire est en cours de création et sera bientôt disponible.
+                    </p>
+                </div>
             </section>
+
 
             <CTA
-                title="Intéressé(e) par un site web ?"
-                desc="Discutons de votre projet et transformons votre présence en ligne."
+                title="Vous avez un projet de site web ?"
                 route="/contact"
-                cta="Faites une demande"
+                cta="Discutons-en"
             />
         </>
     );
