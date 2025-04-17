@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CTA = ({title, route, cta}) => {
   return (
-    <section className="mb-16 max-w-3xl mt-28">
+    <section className="px-4 mb-16 max-w-3xl mt-32">
       <div className="text-center flex flex-col align-center p-7 md:p-10 bg-paletteColor1 rounded-xl gap-4 ">
         <p className="font-bold text-paletteColor3 big-text">{title}</p>
         <Link

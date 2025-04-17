@@ -4,7 +4,7 @@ import CTA from "@/components/CTA.jsx";
 const CreationLogo = () => {
     return (
         <>
-            <section className="text-center">
+            <section className="text-center px-4">
                 <H1>Création d'identité visuelle</H1>
                 <p className="normal-text max-w-3xl mx-auto">
                     Un logo simple, clair, et reconnaissable en un clin d’œil.<br/>
@@ -12,7 +12,7 @@ const CreationLogo = () => {
                 </p>
             </section>
 
-            <div className="w-[90%] mx-auto max-w-[400px] mt-16">
+            <div className="w-[90%] mx-auto max-w-[400px] mt-16 px-4">
                 <img
                     src="/img/creation-logo.svg"
                     alt="Illustration création de logo"
@@ -21,7 +21,7 @@ const CreationLogo = () => {
                 />
             </div>
 
-            <section className="text-center">
+            <section className="text-center px-4">
                 <h2>Des logos polyvalents, pensés pour durer</h2>
                 <p className="max-w-2xl mx-auto normal-text">
                     Nos créations sont optimisées pour être lisibles et impactantes, même en petit format.
@@ -29,7 +29,7 @@ const CreationLogo = () => {
                 </p>
             </section>
 
-            <section className="text-center">
+            <section className="text-center px-4">
                 <h2>Des exemples à venir</h2>
                 <p className="max-w-2xl mx-auto normal-text">
                     La page dédiée à nos réalisations sera bientôt en ligne.

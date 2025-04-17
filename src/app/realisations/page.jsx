@@ -4,7 +4,7 @@ import CTA from "@/components/CTA.jsx";
 const Realisations = () => {
     return (
         <>
-            <section className="text-center">
+            <section className="px-4 text-center">
                 <H1>Nos réalisations</H1>
                 <p className="mt-6 normal-text max-w-3xl mx-auto">
                     Des projets concrets, des résultats visibles.
@@ -12,7 +12,7 @@ const Realisations = () => {
                 </p>
             </section>
 
-            <section className="text-center">
+            <section className="px-4 text-center">
                 <h2>Bientôt en ligne</h2>
                 <p className="max-w-2xl mx-auto mb-6 normal-text">
                     Cette page vous présentera prochainement nos projets les plus marquants : sites web, refontes, logos et identités visuelles.

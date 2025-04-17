@@ -4,7 +4,7 @@ import CTA from "@/components/CTA.jsx";
 const CreationSite = () => {
     return (
         <>
-            <section className="text-center">
+            <section className="text-center px-4">
                 <H1>Création de site web sur-mesure</H1>
                 <p className="normal-text max-w-3xl mx-auto">
                     Un <strong>site internet</strong> bien pensé, ce n’est pas juste une vitrine.<br/>
@@ -13,7 +13,7 @@ const CreationSite = () => {
                 </p>
             </section>
 
-            <div className="w-[90%] mx-auto max-w-[400px] mt-16">
+            <div className="px-4 w-[90%] mx-auto max-w-[400px] mt-16">
                 <img
                     src="/img/creation-site-web.svg"
                     alt="Illustration création de site web"
@@ -22,7 +22,7 @@ const CreationSite = () => {
                 />
             </div>
 
-            <section className="text-center ">
+            <section className="text-center px-4">
                 <h2>
                     Pourquoi avoir un site web ?
                 </h2>
@@ -60,8 +60,8 @@ const CreationSite = () => {
             </section>
 
 
-            <section className="text-center">
-                <h2 className="text-3xl font-bold mb-4 relative inline-block">
+            <section className="text-center px-4">
+                <h2>
                     Des aides pour réduire vos coûts
                 </h2>
 
@@ -83,7 +83,6 @@ const CreationSite = () => {
                     </p>
                 </div>
             </section>
-
 
             <CTA
                 title="Vous avez un projet de site web ?"

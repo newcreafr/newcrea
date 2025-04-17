@@ -21,7 +21,7 @@ const CTA = dynamic(() => import("@/components/CTA"), {
 export default function HomeClient() {
     return (
         <>
-            <section>
+            <section className="px-4">
                 <div className="flex flex-col items-center text-center">
                     <H1>Votre Agence Web à Nancy</H1>
                     <p className="mb-7 normal-text">
@@ -38,7 +38,7 @@ export default function HomeClient() {
                 <LazyVideo className="m-16 mx-auto lg:w-[70%] max-w-[1500px]" link="/videos/presentation.mp4" />
             </section>
 
-            <section>
+            <section className="px-4">
                 <div className="text-center">
                     <h2 id="offers">Ce que nous proposons</h2>
                 </div>
@@ -48,7 +48,7 @@ export default function HomeClient() {
                         altText="Web development logo"
                         title="Création de site web"
                         description="Présentez votre activité, attirez de nouveaux clients et affirmez votre présence en ligne grâce à un site web conçu pour vous. Moderne, clair et fidèle à votre image, il renforce votre visibilité et inspire confiance dès les premières secondes."
-                        price={900}
+                        price={0}
                         route={"/services/creation-site-web"}
                     />
                     <Offre
@@ -56,7 +56,7 @@ export default function HomeClient() {
                         altText="Web redesign logo"
                         title="Refonte de site web"
                         description="Votre site ne reflète plus vos ambitions ? Nous le transformons pour qu’il devienne un atout : un design percutant, une expérience utilisateur fluide et des performances optimisées pour marquer les esprits."
-                        price={500}
+                        price={0}
                         route={"/services/refonte-site-web"}
                     />
                     <Offre
@@ -64,13 +64,13 @@ export default function HomeClient() {
                         altText="Logo logo"
                         title="Création de votre logo"
                         description="Offrez une identité forte à votre entreprise avec un logo unique et mémorable. Nous créons un design sur-mesure qui reflète vos valeurs et capte l’attention dès le premier regard."
-                        price={50}
+                        price={0}
                         route={"/services/creation-logo"}
                     />
                 </div>
             </section>
 
-            <section className="mx-auto">
+            <section className="mx-auto px-4">
                 <div className="text-center">
                     <h2>
                         Pourquoi choisir NewCrea ?

@@ -5,14 +5,14 @@ import CTA from "@/components/CTA";
 export default function Services() {
     return (
         <>
-            <section className="mx-auto">
+            <section className="mx-auto px-4">
                 <H1>Nos services</H1>
                 <p className="text-center normal-text">
                     Notre mission chez <strong>NewCrea</strong> : vous aider à exister pleinement en ligne, sans complexité.<br/>
                     <strong>Site internet</strong>, <strong>refonte</strong> ou <strong>logo</strong> : on vous accompagne de façon simple, claire et personnalisée.
                 </p>
             </section>
-            <section className="mx-auto">
+            <section className="mx-auto px-4">
                 <ServiceSection
                     title="Création de site web"
                     desc="Un vrai outil pour développer votre activité. Votre site n’est pas qu’une vitrine : il doit convaincre, rassurer et donner envie d’agir. On conçoit avec vous un site qui valorise votre offre, attire les bons visiteurs, et vous permet d’atteindre vos objectifs (visibilité, ventes, contacts…)."

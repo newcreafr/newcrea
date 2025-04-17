@@ -62,7 +62,7 @@ const FAQSection = () => {
   };
 
   return (
-      <section>
+      <section className="px-4">
         <div className="text-center">
           <h2  id="faq" className="scroll-mt-32">Vos questions fréquentes</h2>
         </div>

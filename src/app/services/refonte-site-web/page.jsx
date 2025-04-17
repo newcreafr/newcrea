@@ -4,7 +4,7 @@ import CTA from "@/components/CTA.jsx";
 const RefonteSite = () => {
     return (
         <>
-            <section className="text-center">
+            <section className="text-center px-4">
                 <H1>Refonte de site web</H1>
                 <p className="normal-text max-w-3xl mx-auto">
                     Ce que vos visiteurs voient en ligne, c’est ce qu’ils pensent de vous.<br/>
@@ -13,7 +13,7 @@ const RefonteSite = () => {
                 </p>
             </section>
 
-            <div className="w-[90%] mx-auto max-w-[400px] mt-16">
+            <div className="w-[90%] mx-auto max-w-[400px] mt-16 px-4">
                 <img
                     src="/img/refonte-site-web.svg"
                     alt="Illustration refonte de site web"
@@ -22,7 +22,7 @@ const RefonteSite = () => {
                 />
             </div>
 
-            <section className="text-center">
+            <section className="text-center px-4">
                 <h2>Pourquoi envisager une refonte ?</h2>
                 <p className="max-w-2xl mx-auto mb-12 normal-text">
                     Si votre site donne une mauvaise impression, c’est votre entreprise qu’on juge.
@@ -85,7 +85,7 @@ const RefonteSite = () => {
                 </div>
             </section>
 
-            <section className="text-center">
+            <section className="text-center px-4">
                 <h2>Votre site est-il dépassé ?</h2>
                 <p className="normal-text max-w-xl mx-auto mb-8">
                     Vous vous demandez si votre site est toujours à la hauteur ?<br/>

@@ -18,7 +18,7 @@ export default function Offre({
             <h3>{title}</h3>
             <p className="text-smTextWhtColor small-text">{description}</p>
             <div className="mt-auto justify-self-end">
-              <p className="mb-5 font-semibold small-text">À partir de {price}€ HT</p>
+              {/*<p className="mb-5 font-semibold small-text">À partir de {price}€ HT</p>*/}
               <Link className="small-text underline-animation text-paletteColor2" href={route}>
                 En savoir plus
               </Link>

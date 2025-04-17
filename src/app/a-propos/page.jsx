@@ -4,10 +4,10 @@ import CTA from "@/components/CTA";
 const APropos = () => {
     return (
         <>
-            <section>
+            <section className="px-4">
                 <H1>Qui sommes-nous ?</H1>
             </section>
-            <section className="max-w-4xl mx-auto">
+            <section className="px-4 max-w-4xl mx-auto">
                 <div className="text-center">
                     <h2>Notre mission</h2>
                 </div>
@@ -48,7 +48,7 @@ const APropos = () => {
                 </div>
             </section>
 
-            <section className="text-left mx-auto bg-paletteColor1 text-paletteColor3 w-full">
+            <section className="px-4 text-left mx-auto bg-paletteColor1 text-paletteColor3 w-full">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6">
                     <div className="text-center">
                         <h2>Notre équipe</h2>
@@ -93,7 +93,7 @@ const APropos = () => {
             </section>
 
 
-            <section className="text-left max-w-4xl mx-auto">
+            <section className="px-4 text-left max-w-4xl mx-auto">
                 <div className="text-center">
                     <h2>Pourquoi nous choisir</h2>
                 </div>
