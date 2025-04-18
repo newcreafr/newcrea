@@ -88,7 +88,8 @@ export default function HomeClient() {
                     />
                     <PourquoiNousSection
                         img="/img/accompagnement-humain.svg"
-                        title="Image d'une poignée de main pour représenter l'accompagnement humain"
+                        alt="Image d'une poignée de main pour représenter l'accompagnement humain"
+                        title="Accompagnement humain"
                         desc="Nous échangeons avec vous de façon claire et transparente, pour bâtir un projet digital à votre image."
                     />
                     <PourquoiNousSection
