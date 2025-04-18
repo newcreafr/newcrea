@@ -82,16 +82,18 @@ export default function HomeClient() {
                 <div className="flex h-auto flex-col lg:items-stretch items-center justify-between gap-4 lg:flex-row max-w-[1500px] mx-auto">
                     <PourquoiNousSection
                         img="/img/analyse-personnalisee.svg"
+                        alt="Image d'une loupe pour représenter l'analyse personnalisée"
                         title="Analyse personnalisée"
                         desc="Avant toute proposition, nous étudions votre activité, vos enjeux et vos objectifs pour vous apporter une solution pertinente et parfaitement adaptée."
                     />
                     <PourquoiNousSection
                         img="/img/accompagnement-humain.svg"
-                        title="Accompagnement humain"
+                        title="Image d'une poignée de main pour représenter l'accompagnement humain"
                         desc="Nous échangeons avec vous de façon claire et transparente, pour bâtir un projet digital à votre image."
                     />
                     <PourquoiNousSection
                         img="/img/prix-justes.svg"
+                        alt="Image d'argent pour représenter les prix justes."
                         title="Des prix justes"
                         desc="Nos offres sont pensées pour les TPE/PME : efficacité, visibilité et budget maîtrisé. Nous vous aidons également à obtenir des subventions pour la création de votre site."
                     />

@@ -19,8 +19,8 @@ const CreationLogo = () => {
 
             <div className="w-[90%] mx-auto max-w-[400px] mt-16 px-4">
                 <img
-                    src="/img/creation-logo.svg"
-                    alt="Illustration création de logo"
+                    src="/img/creation-identite-visuelle.svg"
+                    alt="Illustration création d'identité visuelle"
                     className="w-full h-auto"
                     loading="lazy"
                 />

@@ -87,7 +87,7 @@ const APropos = () => {
                     <img
                         className="w-full max-w-xl mx-auto rounded-xl border border-paletteColor2 object-cover"
                         src="/img/emilien-jules.jpg"
-                        alt="Emilien & Jules"
+                        alt="Emilien & Jules - Co-fondateurs et co-dirigeants de NewCrea"
                     />
 
                     <p className="py-10 normal-text text-center">
