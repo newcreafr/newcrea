@@ -1,6 +1,11 @@
 import H1 from "@/components/H1";
 import CTA from "@/components/CTA";
 
+export const metadata = {
+    title: "Nos tarifs • Prix ajustables TPE & PME",
+    description: "Nos prix sont clairs et adaptés aux petites entreprises. Découvrez nos tarifs pour un site professionnel sans surprise.",
+};
+
 const Tarifs = () => {
     return (
         <>

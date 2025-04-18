@@ -1,6 +1,11 @@
 import H1 from "@/components/H1.jsx";
 import CTA from "@/components/CTA.jsx";
 
+export const metadata = {
+    title: "Création de site web • Gagnez en visibilité",
+    description: "Votre entreprise mérite mieux qu'une simple présence en ligne. Offrez-vous un site moderne, rapide et conçu pour convertir.",
+};
+
 const CreationSite = () => {
     return (
         <>

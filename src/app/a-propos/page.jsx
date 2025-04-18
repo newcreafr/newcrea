@@ -1,6 +1,11 @@
 import H1 from "@/components/H1";
 import CTA from "@/components/CTA";
 
+export const metadata = {
+    title: "À propos de NewCrea",
+    description: "Découvrez qui se cache derrière NewCrea : une agence web fondée par Jules & Emilien, au service des petites entreprises locales.",
+};
+
 const APropos = () => {
     return (
         <>

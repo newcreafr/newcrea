@@ -1,6 +1,11 @@
 import H1 from "@/components/H1.jsx";
 import CTA from "@/components/CTA.jsx";
 
+export const metadata = {
+    title: "Création d’identité visuelle • Logo & charte graphique pro",
+    description: "Logo, couleurs, typographies : nous façonnons une image de marque forte, cohérente et mémorable pour votre activité.",
+};
+
 const CreationLogo = () => {
     return (
         <>

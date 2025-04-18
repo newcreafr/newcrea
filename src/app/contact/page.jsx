@@ -1,6 +1,11 @@
 import ContactForm from "@/components/ContactForm";
 import H1 from "@/components/H1";
 
+export const metadata = {
+    title: "Contactez NewCrea",
+    description: "Un projet ? Une question ? L’équipe NewCrea vous répond rapidement. Par mail ou formulaire.",
+};
+
 const Contact = () => {
     return (
         <section className="mx-auto max-w-4xl text-center">

@@ -2,6 +2,11 @@ import H1 from "@/components/H1";
 import ServiceSection from "@/components/ServiceSection";
 import CTA from "@/components/CTA";
 
+export const metadata = {
+    title: "Nos services : création de site, refonte et identité visuelle",
+    description: "Sites vitrines, refonte complète ou identité visuelle : découvrez nos services sur mesure pour booster votre présence en ligne.",
+};
+
 export default function Services() {
     return (
         <>
@@ -28,10 +33,10 @@ export default function Services() {
                     reverse={true}
                 />
                 <ServiceSection
-                    title="Création de logo"
+                    title="Création d'identité visuelle"
                     desc="Un logo professionnel, simple et reconnaissable. Votre logo, c’est la première impression que vous laissez. On crée pour vous une identité visuelle sur mesure, adaptée à votre activité et facile à décliner sur tous vos supports (site, réseaux, cartes…)."
                     img="/img/creation-logo.svg"
-                    route="/services/creation-logo"
+                    route="/services/creation-identite-visuelle"
                     reverse={false}
                 />
             </section>

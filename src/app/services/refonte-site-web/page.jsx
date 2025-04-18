@@ -1,6 +1,11 @@
 import H1 from "@/components/H1.jsx";
 import CTA from "@/components/CTA.jsx";
 
+export const metadata = {
+    title: "Refonte de site web à Nancy • Modernisez votre présence en ligne",
+    description: "Votre site est lent ou dépassé ? Nous le repensons entièrement pour en faire un outil clair, moderne et performant.",
+};
+
 const RefonteSite = () => {
     return (
         <>

@@ -1,8 +1,14 @@
 import H1 from "@/components/H1";
 
+export const metadata = {
+    title: "Mentions légales",
+    description: "Page légale de NewCrea.",
+    robots: "noindex, nofollow",
+};
+
 const MentionsLegales = () => {
     return (
-        <section>
+        <section className="px-4">
             <H1>Mentions légales & politique de confidentialité</H1>
             <div className="px-10 my-32 space-y-10">
                 <h2>Préambule</h2>

@@ -1,3 +1,9 @@
+export const metadata = {
+    title: "Page non trouvée",
+    description: "Cette page n'existe pas.",
+    robots: "noindex, nofollow",
+};
+
 const NotFound = () => {
     return (
         <div className="">

@@ -4,8 +4,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
       title: "NewCrea • Agence Web",
-      description: "Agence web à Nancy — création de sites sur mesure, logos et plus.",
-      robots: "noindex, nofollow",
+      description: "Agence web à Nancy — création de sites sur mesure, refonte et identité visuelle.",
 };
 
 export default function RootLayout({ children }) {
@@ -13,11 +12,19 @@ export default function RootLayout({ children }) {
           <html lang="fr" className="scroll-smooth bg-paletteColor3">
           <head>
               <link rel="icon" href="/img/newcrea-logo.svg" type="image/svg+xml"/>
+              <script type="application/ld+json" dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "Organization",
+                      "name": "NewCrea",
+                      "url": "https://newcrea.fr",
+                      "logo": "https://newcrea.fr/img/newcrea-logo.svg"
+                  })
+              }}/>
           </head>
+
           <body className="min-w-[300px] font-poppins text-paletteColor1">
           <Header/>
-          {/*<p className="text-paletteColor2 text-center font-bold text-xl">-- Ce site est actuellement en phase de*/}
-          {/*    développement --</p>*/}
           {children}
           <Footer/>
           </body>

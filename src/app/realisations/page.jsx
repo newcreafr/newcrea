@@ -1,6 +1,11 @@
 import H1 from "@/components/H1.jsx";
 import CTA from "@/components/CTA.jsx";
 
+export const metadata = {
+    title: "Nos réalisations • Sites web créés par NewCrea",
+    description: "Explorez nos projets clients : restaurateurs, commerçants, artisans… Chaque site est pensé sur mesure pour atteindre ses objectifs.",
+};
+
 const Realisations = () => {
     return (
         <>

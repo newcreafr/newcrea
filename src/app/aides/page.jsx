@@ -2,6 +2,11 @@ import { ExternalLink } from "lucide-react";
 import H1 from "@/components/H1";
 import CTA from "@/components/CTA";
 
+export const metadata = {
+    title: "Bénéficiez d'aides pour la création de votre site",
+    description: "Profitez d’aides publiques pour financer votre site web.",
+};
+
 const Aides = () => {
     return (
         <>
