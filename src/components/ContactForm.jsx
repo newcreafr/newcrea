@@ -1,13 +1,12 @@
 "use client";
-
 import { useState } from "react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     email: "",
-    projet: "Site internet",
+    projet: "Création d'un site web",
     delai: "Le plus tôt possible",
-    budget: "500€ - 1200€",
+    budget: "Entre 500€ et 1200€",
     message: "",
     consent: false,
   });
@@ -41,30 +40,26 @@ export default function ContactForm() {
       return;
     }
 
-    const fullMessage = `
-      Projet : ${formData.projet}
-      Délais : ${formData.delai}
-      Budget : ${formData.budget}
-      Message : ${formData.message}
-    `;
-
     const dataToSend = new FormData();
     dataToSend.append("email", formData.email);
-    dataToSend.append("objet", `Demande de devis - ${formData.projet}`);
-    dataToSend.append("message", fullMessage);
+    dataToSend.append("projet", formData.projet);
+    dataToSend.append("delai", formData.delai);
+    dataToSend.append("budget", formData.budget);
+    dataToSend.append("message", formData.message);
 
     try {
       const res = await fetch("https://newcrea.fr/contact.php", {
         method: "POST",
         body: dataToSend,
       });
+
       const resText = await res.text();
       setResult(resText);
       setFormData({
         email: "",
-        projet: "Site internet",
+        projet: "Création d'un site web",
         delai: "Le plus tôt possible",
-        budget: "500€ - 1200€",
+        budget: "Entre 500€ et 1200€",
         message: "",
         consent: false,
       });
@@ -74,10 +69,7 @@ export default function ContactForm() {
   };
 
   return (
-      <form
-          onSubmit={handleSubmit}
-          className="max-w-4xl mx-auto space-y-6 p-4 text-left"
-      >
+      <form onSubmit={handleSubmit} className="max-w-4xl mx-auto space-y-6 p-4 text-left">
         <div className="grid md:grid-cols-2 gap-4">
           <div>
             <label className="font-semibold text-base md:text-lg">E-mail</label>
@@ -101,7 +93,7 @@ export default function ContactForm() {
             >
               <option>Création d'un site web</option>
               <option>Refonte d'un site web</option>
-              <option>Création d'un logo</option>
+              <option>Création d'identité visuelle</option>
             </select>
           </div>
           <div>
@@ -161,14 +153,12 @@ export default function ContactForm() {
           En cochant cette case, j'accepte que les informations saisies soient utilisées dans le cadre de la prise de
           contact.
         </label>
-
         {error && <p className="text-red-600">{error}</p>}
         {result && <p className="text-green-600">{result}</p>}
-
         <div className="flex justify-end">
           <button
               type="submit"
-              className="transform rounded-full border-2 border-paletteColor1 bg-white px-4 py-2 text-paletteColor1 transition-all duration-300 ease-in-out hover:origin-center hover:scale-105 hover:bg-paletteColor1 hover:text-paletteColor3  text-base lg:text-lg"
+              className="transform rounded-full border-2 border-paletteColor1 bg-white px-4 py-2 text-paletteColor1 transition-all duration-300 ease-in-out hover:origin-center hover:scale-105 hover:bg-paletteColor1 hover:text-paletteColor3 text-base lg:text-lg"
           >
             Envoyer
           </button>
