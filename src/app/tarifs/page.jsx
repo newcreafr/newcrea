@@ -1,12 +1,47 @@
 import H1 from "@/components/H1";
 import CTA from "@/components/CTA";
+import React from "react";
 
 export const metadata = {
     title: "Nos tarifs • Prix ajustables TPE & PME",
-    description: "Nos prix sont clairs et adaptés aux petites entreprises. Découvrez nos tarifs pour un site professionnel sans surprise.",
+    description:
+        "Nos prix sont clairs et adaptés aux petites entreprises. Découvrez nos tarifs pour un site professionnel sans surprise.",
 };
 
 const Tarifs = () => {
+    const renderSection = (title, offers) => (
+        <div className="text-left">
+            <div className="text-center">
+                <h2>{title}</h2>
+            </div>
+            <div className="space-y-6">
+                {offers.map(({ type, details }, i) => (
+                    <div key={i}>
+                        <div className="text-center">
+                            <h3>{type}</h3>
+                        </div>
+                        <div className="space-y-4">
+                            {details.map(([label, price, desc], idx) => (
+                                <div
+                                    key={`${i}-${idx}`}
+                                    className="flex justify-between border-b border-paletteColor2 pb-2"
+                                >
+                                    <div className="w-full">
+                                        <div className="flex justify-between items-center">
+                                            <span className="font-medium small-text">{label}</span>
+                                            <span className="font-bold small-text text-right">{price}</span>
+                                        </div>
+                                        <p className="text-sm text-smTextWhtColor mt-1">{desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+
     return (
         <>
             <section className="text-center px-4">
@@ -14,132 +49,110 @@ const Tarifs = () => {
                     <H1>Nos tarifs</H1>
 
                     <p className="normal-text">
-                        Chez <strong>NewCrea</strong>, nous pensons que la clarté est essentielle.<br/>
-                        Voici nos <strong>tarifs indicatifs</strong> pour la création ou la refonte de site web, ainsi que nos prestations en
-                        identité visuelle.
+                        Chez <strong>NewCrea</strong>, nous pensons que la clarté est essentielle.
+                        <br />
+                        Voici nos <strong>tarifs indicatifs</strong> pour la création ou la refonte de site web, ainsi que nos prestations en identité visuelle.
                     </p>
-                    <br/>
+                    <br />
                     <p className="normal-text">
-                        Chaque projet étant unique, <strong>ces tarifs sont ajustables selon vos besoins spécifiques.</strong><br/>
+                        Chaque projet étant unique, <strong>ces tarifs sont ajustables selon vos besoins spécifiques.</strong>
+                        <br />
                         Un devis personnalisé vous sera systématiquement proposé après un échange sur vos besoins.
                     </p>
 
-                    <h2 className="mt-16">Création de site</h2>
-                    <table className="w-full text-left border-collapse">
-                        <tbody>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Audit personnalisé de l’environnement</td>
-                            <td className="py-2 text-right small-text">150€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Maquettes personnalisées</td>
-                            <td className="py-2 text-right small-text">450€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Site de 1 à 5 pages</td>
-                            <td className="py-2 text-right small-text">750€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Site de 6 à 10 pages</td>
-                            <td className="py-2 text-right small-text">1 200€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Site de 11 pages et plus</td>
-                            <td className="py-2 text-right small-text">à partir de 2 100€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Création d’identité visuelle</td>
-                            <td className="py-2 text-right small-text">voir section dédiée</td>
-                        </tr>
-                        <tr>
-                            <td className="py-2 font-medium small-text">Hébergement, mise en ligne et configuration</td>
-                            <td className="py-2 text-right small-text">150€ TTC</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    {/* Création de site */}
+                    {renderSection("Création de site web", [
+                        {
+                            type: "Site carte de visite (one page)",
+                            details: [
+                                ["Audit de l'environnement", "100€ TTC", "Analyse et recueil de vos besoins"],
+                                ["Réalisation des maquettes", "100€ TTC", "Organisation du contenu et design du site"],
+                                ["Développement", "300€ TTC", "Construction du site, choix des technologies, SEO et optimisation"],
+                                ["Hébergement pour la première année", "150€ TTC", "Nom de domaine, serveur, configuration"],
+                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
+                                ["Pack création de site one page", "600€ TTC", "Comprend tous les éléments précédents"],
+                            ],
+                        },
+                        {
+                            type: "Site vitrine (2 à 5 pages)",
+                            details: [
+                                ["Audit de l'environnement", "150€ TTC", "Analyse et recueil de vos besoins"],
+                                ["Réalisation des maquettes", "400€ TTC", "Organisation du contenu et design du site"],
+                                ["Développement", "750€ TTC", "Construction du site, choix des technologies, SEO et optimisation"],
+                                ["Hébergement pour la première année", "150€ TTC", "Nom de domaine, serveur, configuration"],
+                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
+                                ["Pack création de site vitrine", "1300€ TTC", "Comprend tous les éléments précédents"],
+                            ],
+                        },
+                        {
+                            type: "Site standard (6 à 10 pages)",
+                            details: [
+                                ["Audit de l'environnement", "200€ TTC", "Analyse et recueil de vos besoins"],
+                                ["Réalisation des maquettes", "500€ TTC", "Organisation du contenu et design du site"],
+                                ["Développement", "1300€ TTC", "Construction du site, choix des technologies, SEO et optimisation"],
+                                ["Hébergement pour la première année", "150€ TTC", "Nom de domaine, serveur, configuration"],
+                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
+                                ["Pack création de site standard", "2000€ TTC", "Comprend tous les éléments précédents"],
+                            ],
+                        },
+                        {
+                            type: "Site complexe",
+                            details: [["Pack création de site complexe", "À partir de 2500€ TTC", "Sur devis selon le besoin"]],
+                        },
+                    ])}
 
-                    <h2 className="mt-16">Refonte de site</h2>
-                    <table className="w-full text-left border-collapse">
-                        <tbody>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Audit personnalisé de l’environnement</td>
-                            <td className="py-2 text-right small-text">150€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Maquettes personnalisées</td>
-                            <td className="py-2 text-right small-text">450€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Création d’identité visuelle</td>
-                            <td className="py-2 text-right small-text">voir section dédiée</td>
-                        </tr>
-                        <tr>
-                            <td className="py-2 font-medium small-text">Refonte</td>
-                            <td className="py-2 text-right small-text">sur devis</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    {/* Refonte de site */}
+                    {renderSection("Refonte de site web", [
+                        {
+                            type: "Site carte de visite (one page)",
+                            details: [
+                                ["Refonte", "150€ TTC", "Redéveloppement et optimisation"],
+                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
+                                ["Pack refonte de site one page", "250€ TTC", "Comprend tous les éléments précédents"],
+                            ],
+                        },
+                        {
+                            type: "Site vitrine (2 à 5 pages)",
+                            details: [
+                                ["Audit du site actuel", "100€ TTC", "Évaluation de l'UX/UI et des performances"],
+                                ["Réalisation des maquettes", "200€ TTC", "Nouveau design + réorganisation"],
+                                ["Refonte", "400€ TTC", "Redéveloppement et optimisation"],
+                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
+                                ["Pack refonte de site vitrine", "700€ TTC", "Comprend tous les éléments précédents"],
+                            ],
+                        },
+                        {
+                            type: "Site standard (6 à 10 pages)",
+                            details: [
+                                ["Audit du site actuel", "150€ TTC", "Évaluation de l'UX/UI et des performances"],
+                                ["Réalisation des maquettes", "250€ TTC", "Nouveau design + réorganisation"],
+                                ["Refonte", "700€ TTC", "Redéveloppement et optimisation"],
+                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
+                                ["Pack refonte de site standard", "1100€ TTC", "Comprend tous les éléments précédents"],
+                            ],
+                        },
+                        {
+                            type: "Site complexe",
+                            details: [["Pack refonte de site complexe", "À partir de 1800€ TTC", "Sur devis selon le besoin"]],
+                        },
+                    ])}
 
-                    <h2 className="mt-16">Création d’identité visuelle</h2>
-                    <table className="w-full text-left border-collapse">
-                        <tbody>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Création de logo (3 choix possibles)</td>
-                            <td className="py-2 text-right small-text">100€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Palette de couleurs adaptée</td>
-                            <td className="py-2 text-right small-text">100€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Style typographique personnalisé</td>
-                            <td className="py-2 text-right small-text">100€ TTC</td>
-                        </tr>
-                        <tr className="border-b">
-                            <td className="py-2 font-medium small-text">Signature numérique sur-mesure</td>
-                            <td className="py-2 text-right small-text">50€ TTC</td>
-                        </tr>
-                        <tr>
-                            <td className="py-2 font-medium small-text">Pack identité visuelle complet</td>
-                            <td className="py-2 text-right small-text">250€ TTC</td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-
-                    <h2 className="mt-16">Bon à savoir</h2>
-
-                    <div className="grid gap-4 text-left  md:grid-cols-2">
-                        <div className="border border-borderColor rounded-lg p-4">
-                            <p className="font-semibold normal-text">Tous nos tarifs sont affichés TTC</p>
-                            <p className="mt-1 small-text">(TVA non applicable, art. 293 B du CGI –
-                                auto-entreprise).</p>
-                        </div>
-
-                        <div className="border border-borderColor rounded-lg p-4 ">
-                            <p className="font-semibold normal-text">Devis personnalisé</p>
-                            <p className="small-text mt-1">Proposé après échange selon vos besoins spécifiques
-                                ou complexes.</p>
-                        </div>
-
-                        <div className="border border-borderColor rounded-lg p-4">
-                            <p className="font-semibold normal-text">Réduction possible</p>
-                            <p className="small-text mt-1">Pour les associations ou entreprises en création.</p>
-                        </div>
-
-                        <div className="border border-borderColor rounded-lg p-4">
-                            <p className="font-semibold normal-text">Vous avez déjà un audit ou des maquettes ?</p>
-                            <p className="small-text mt-1">Contactez-nous, nous ajusterons le tarif en
-                                conséquence.</p>
-                        </div>
-                    </div>
+                    {/* Identité visuelle */}
+                    {renderSection("Création d’identité visuelle", [
+                        {
+                            type: "",
+                            details: [
+                                ["Création d'un logo", "100€ TTC", "Format SVG, JPEG, PNG"],
+                                ["Signature d'email sur mesure", "50€ TTC", "Signature HTML/CSS personnalisée"],
+                                ["Charte graphique", "100€ TTC", "Cahier des normes graphiques (couleurs, typos, etc.)"],
+                                ["Pack création d'identité visuelle", "200€ TTC", "Comprend tous les éléments précédents"],
+                            ],
+                        },
+                    ])}
                 </div>
             </section>
-            <CTA
-                title="Prêt(e) à passer à l'action ?"
-                route="/services/"
-                cta="Découvrir nos services"
-            />
+
+            <CTA title="Prêt(e) à passer à l'action ?" route="/services/" cta="Découvrir nos services" />
         </>
     );
 };
