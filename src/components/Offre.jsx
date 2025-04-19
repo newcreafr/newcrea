@@ -13,7 +13,7 @@ export default function Offre({
       <div>
         <div
             className="flex h-full lg:pr-16 max-w-[500px] flex-col lg:flex-row justify-between gap-4 rounded-lg bg-paletteColor3 p-4 border border-borderColor items-center lg:items-start text-center lg:text-left">
-          <img className="size-10" src={imageSrc} alt={altText} loading="lazy"/>
+          <img className="size-10" src={imageSrc} alt={altText}/>
           <div className="flex flex-grow flex-col items-center lg:items-start gap-5 h-full">
             <h3>{title}</h3>
             <p className="text-smTextWhtColor small-text">{description}</p>
