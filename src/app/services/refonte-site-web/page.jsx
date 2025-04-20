@@ -1,5 +1,6 @@
 import H1 from "@/components/H1.jsx";
 import CTA from "@/components/CTA.jsx";
+import Image from "next/image";
 
 export const metadata = {
     title: "Refonte de site web à Nancy • Modernisez votre présence en ligne",
@@ -19,12 +20,7 @@ const RefonteSite = () => {
             </section>
 
             <div className="w-[90%] mx-auto max-w-[400px] mt-16 px-4">
-                <img
-                    src="/img/refonte-site-web.svg"
-                    alt="Illustration refonte de site web"
-                    className="w-full h-auto"
-                    loading="lazy"
-                />
+                <Image src="/img/refonte-site-web.svg" alt="Illustration refonte de site web" width={400} height={300} loading="lazy"/>
             </div>
 
             <section className="text-center px-4">

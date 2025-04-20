@@ -1,5 +1,6 @@
 import H1 from "@/components/H1";
 import CTA from "@/components/CTA";
+import Image from "next/image";
 
 export const metadata = {
     title: "À propos de NewCrea",
@@ -84,10 +85,13 @@ const APropos = () => {
                         </div>
                     </div>
 
-                    <img
-                        className="w-full max-w-xl mx-auto rounded-xl border border-paletteColor2 object-cover"
+                    <Image
                         src="/img/emilien-jules.jpg"
-                        alt="Emilien & Jules - Co-fondateurs et co-dirigeants de NewCrea"
+                        alt="Photo d'Emilien & Jules - Co-fondateurs et co-dirigeants de NewCrea"
+                        width={576}
+                        height={384}
+                        className="w-full max-w-xl mx-auto rounded-xl border border-paletteColor2 object-cover"
+                        loading="lazy"
                     />
 
                     <p className="py-10 normal-text text-center">

@@ -8,7 +8,7 @@ module.exports = {
                 xs: "550px",
             },
             fontFamily: {
-                poppins: ["Poppins", "sans-serif"],
+                poppins: ["Poppins", "system-ui", "sans-serif"],
             },
             colors: {
                 paletteColor1: "#091021",

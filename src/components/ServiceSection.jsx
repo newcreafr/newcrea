@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const ServiceSection = ({ title, desc, img, route, reverse }) => {
     return (
@@ -12,7 +13,14 @@ const ServiceSection = ({ title, desc, img, route, reverse }) => {
 
             </div>
             <div className="w-full lg:w-1/3 px-4 max-w-[400px] lg:max-w-none mt-12">
-                <img src={img} alt={title} className="w-full h-auto" loading="lazy"/>
+                <Image
+                    src={img}
+                    alt={title}
+                    width={400}
+                    height={300}
+                    className="w-full h-auto"
+                    loading="lazy"
+                />
             </div>
         </div>
     );

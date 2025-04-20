@@ -1,5 +1,6 @@
 import H1 from "@/components/H1.jsx";
 import CTA from "@/components/CTA.jsx";
+import Image from "next/image";
 
 export const metadata = {
     title: "Création d’identité visuelle • Logo & charte graphique pro",
@@ -18,12 +19,7 @@ const CreationLogo = () => {
             </section>
 
             <div className="w-[90%] mx-auto max-w-[400px] mt-16 px-4">
-                <img
-                    src="/img/creation-identite-visuelle.svg"
-                    alt="Illustration création d'identité visuelle"
-                    className="w-full h-auto"
-                    loading="lazy"
-                />
+                <Image src="/img/creation-identite-visuelle.svg" alt="Illustration création d'identité visuelle" width={400} height={300} loading="lazy"/>
             </div>
 
             <section className="text-center px-4">

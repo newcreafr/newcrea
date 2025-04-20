@@ -1,6 +1,7 @@
 import H1 from "@/components/H1.jsx";
 import CTA from "@/components/CTA.jsx";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
     title: "Création de site web • Gagnez en visibilité",
@@ -20,12 +21,7 @@ const CreationSite = () => {
             </section>
 
             <div className="px-4 w-[90%] mx-auto max-w-[400px] mt-16">
-                <img
-                    src="/img/creation-site-web.svg"
-                    alt="Illustration création de site web"
-                    className="w-full h-auto"
-                    loading="lazy"
-                />
+                <Image src="/img/creation-site-web.svg" alt="Illustration création de site web" width={400} height={300} loading="lazy"/>
             </div>
 
             <section className="text-center px-4">
