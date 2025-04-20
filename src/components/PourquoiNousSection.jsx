@@ -7,10 +7,10 @@ export default function PourquoiNousSection({
     alt
 }) {
     return (
-        <div className="flex flex-1 flex-col items-center gap-4 max-w-[500px] rounded-lg bg-paletteColor3 p-4 border border-borderColor text-center">
+        <div className="flex flex-1 flex-col items-center gap-4 max-w-[500px] rounded-lg bg-paletteColor3 py-4 px-6 border border-borderColor text-center">
             <img className="size-10" src={img} alt={alt}/>
             <h3>{title}</h3>
-            <p className="small-text text-smTextWhtColor">{desc}</p>
+            <p className="small-text text-smTextWhtColor text-left">{desc}</p>
         </div>
     );
 }

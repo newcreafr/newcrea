@@ -24,7 +24,7 @@ export default function HomeClient() {
             <section className="px-4">
                 <div className="flex flex-col items-center text-center">
                     <H1>Votre Agence Web à Nancy</H1>
-                    <p className="mb-7 normal-text">
+                    <p className="mb-7 normal-text max-w-4xl">
                         Développez une présence digitale qui <strong>vous ressemble</strong>, grâce à nos
                         solutions <strong>modernes</strong> et <strong>sur mesure</strong>.
                     </p>
@@ -35,7 +35,7 @@ export default function HomeClient() {
                         Découvrir nos services
                     </Link>
                 </div>
-                <LazyVideo className="m-16 mx-auto lg:w-[70%] max-w-[1500px]" link="/videos/presentation.mp4" />
+                <LazyVideo className="m-16 mx-auto lg:w-[70%] max-w-4xl" link="/videos/presentation.mp4" />
             </section>
 
             <section className="px-4">
@@ -96,7 +96,7 @@ export default function HomeClient() {
                         img="/img/prix-justes.svg"
                         alt="Image d'argent pour représenter les prix justes."
                         title="Des prix justes"
-                        desc="Nos offres sont pensées pour les TPE/PME : efficacité, visibilité et budget maîtrisé. Nous vous aidons également à obtenir des subventions pour la création de votre site."
+                        desc="Nos offres sont pensées pour les TPE/PME : efficacité, visibilité et budget maîtrisé. Vous payez uniquement pour ce dont vous avez réellement besoin."
                     />
                 </div>
             </section>

@@ -6,7 +6,7 @@ export default function ProcessusStep({ num, title, desc }) {
             </div>
             <h3 className="text-paletteColor3">{title}</h3>
             <div
-                className="text-smTextDrkColor [&>p]:normal-text [&>p]:mb-3 [&>p:last-child]:mb-0"
+                className="text-smTextDrkColor [&>p]:normal-text [&>p]:mb-3 [&>p:last-child]:mb-0 text-left"
                 dangerouslySetInnerHTML={{ __html: desc }}
             />
         </div>

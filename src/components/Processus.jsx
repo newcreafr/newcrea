@@ -15,22 +15,22 @@ const steps = [
   {
     num: 2,
     title: "Compréhension de vos besoins",
-    desc: "C’est ici qu’on construit le cœur de votre projet.\n\n" +
-        "On identifie ce qui compte vraiment pour vous : vos priorités, vos messages clés, le type de public que vous visez, et le style visuel qui vous correspond.\n\n" +
+    desc: "C’est ici qu’on construit le cœur de votre projet.\n" +
+        "On identifie ce qui compte vraiment pour vous : vos priorités, vos messages clés, le type de public que vous visez, et le style visuel qui vous correspond.\n" +
         "On vous accompagne pas à pas pour définir un site clair, cohérent et aligné avec vos objectifs.\n\n" +
         "Et si vous avez déjà un site, on vous propose un audit complet pour en tirer le meilleur et corriger le reste.",
   },
   {
     num: 3,
     title: "Maquettes personnalisées et retours",
-    desc: "À partir de tout ce qu’on a défini ensemble, on vous présente une première maquette de votre futur site.\n\n" +
+    desc: "À partir de tout ce qu’on a défini ensemble, on vous présente une première maquette de votre futur site.\n" +
         "C’est une version sur-mesure, pensée pour vous permettre de vous projeter concrètement.\n\n" +
         "Vous nous partagez vos retours : textes, couleurs, disposition… on ajuste ensemble chaque détail pour coller au plus près de votre vision.",
   },
   {
     num: 4,
     title: "Développement & ajustements",
-    desc: "Après validation de la maquette, on passe à la construction du site.\n\n" +
+    desc: "Après validation de la maquette, on passe à la construction du site.\n" +
         "On développe une version fonctionnelle, performante et fidèle à vos attentes.\n\n" +
         "Vous êtes impliqué à chaque étape : on avance ensemble, on ajuste si besoin, et on finalise un site prêt à être lancé dans les meilleures conditions.",
   },
@@ -38,8 +38,8 @@ const steps = [
     num: 5,
     title: "Livraison & mise en ligne",
     desc:
-        "Une fois les derniers réglages faits, on met votre site en ligne.\n\n" +
-        "Tout est prêt pour accueillir vos visiteurs : le site est visible, rapide et fonctionnel.\n\n" +
+        "Une fois les derniers réglages faits, on met votre site en ligne.\n" +
+        "Tout est prêt pour accueillir vos visiteurs : le site est visible, rapide et fonctionnel.\n" +
         "On prend également le temps de vous expliquer comment l’utiliser au quotidien, en toute simplicité.\n\n" +
         "Un doute, une question, une envie d’évolution ? On sera toujours là pour vous accompagner.",
   },

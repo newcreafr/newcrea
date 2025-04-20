@@ -48,17 +48,37 @@ const Tarifs = () => {
                 <div className="max-w-4xl mx-auto">
                     <H1>Nos tarifs</H1>
 
-                    <p className="normal-text">
+                    <p className="normal-text text-left">
                         Chez <strong>NewCrea</strong>, nous pensons que la clarté est essentielle.
-                        <br />
                         Voici nos <strong>tarifs indicatifs</strong> pour la création ou la refonte de site web, ainsi que nos prestations en identité visuelle.
                     </p>
                     <br />
-                    <p className="normal-text">
+                    <p className="normal-text text-left">
                         Chaque projet étant unique, <strong>ces tarifs sont ajustables selon vos besoins spécifiques.</strong>
                         <br />
                         Un devis personnalisé vous sera systématiquement proposé après un échange sur vos besoins.
                     </p>
+
+                    <h2>Bon à savoir</h2>
+                    <p className="normal-text text-left">
+                        Certains éléments peuvent être <strong>déduits du montant total</strong> si vous les avez déjà
+                        préparés en amont (vous-même ou un expert) :
+                    </p>
+
+                    <ul className="list-disc pl-5 mt-4 text-left space-y-2 small-text">
+                        <li>
+                            <strong>Audit de votre environnement</strong> : vos besoins en matière de design et de
+                            contenu sont déjà formalisés, clairs et structurés.
+                        </li>
+                        <li>
+                            <strong>Audit de votre site actuel</strong> : les points faibles de votre site sont
+                            identifiés, et vos attentes en termes de refonte sont bien précises.
+                        </li>
+                        <li>
+                            <strong>Réalisation des maquettes</strong> : vous disposez de maquettes détaillées de chaque page, adaptées aux écrans ordinateur et mobile.
+                        </li>
+                    </ul>
+
 
                     {/* Création de site */}
                     {renderSection("Création de site web", [
@@ -68,8 +88,8 @@ const Tarifs = () => {
                                 ["Audit de l'environnement", "100€ TTC", "Analyse et recueil de vos besoins"],
                                 ["Réalisation des maquettes", "100€ TTC", "Organisation du contenu et design du site"],
                                 ["Développement", "300€ TTC", "Construction du site, choix des technologies, SEO et optimisation"],
-                                ["Hébergement pour la première année", "150€ TTC", "Nom de domaine, serveur, configuration"],
-                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
+                                ["Hébergement pour la première année (option)", "150€ TTC", "Nom de domaine, serveur, configuration"],
+                                ["Création d'identité visuelle (option)", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
                                 ["Pack création de site one page", "600€ TTC", "Comprend tous les éléments précédents"],
                             ],
                         },
@@ -79,8 +99,8 @@ const Tarifs = () => {
                                 ["Audit de l'environnement", "150€ TTC", "Analyse et recueil de vos besoins"],
                                 ["Réalisation des maquettes", "400€ TTC", "Organisation du contenu et design du site"],
                                 ["Développement", "750€ TTC", "Construction du site, choix des technologies, SEO et optimisation"],
-                                ["Hébergement pour la première année", "150€ TTC", "Nom de domaine, serveur, configuration"],
-                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
+                                ["Hébergement pour la première année (option)", "150€ TTC", "Nom de domaine, serveur, configuration"],
+                                ["Création d'identité visuelle (option)", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
                                 ["Pack création de site vitrine", "1300€ TTC", "Comprend tous les éléments précédents"],
                             ],
                         },
@@ -90,8 +110,8 @@ const Tarifs = () => {
                                 ["Audit de l'environnement", "200€ TTC", "Analyse et recueil de vos besoins"],
                                 ["Réalisation des maquettes", "500€ TTC", "Organisation du contenu et design du site"],
                                 ["Développement", "1300€ TTC", "Construction du site, choix des technologies, SEO et optimisation"],
-                                ["Hébergement pour la première année", "150€ TTC", "Nom de domaine, serveur, configuration"],
-                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
+                                ["Hébergement pour la première année (option)", "150€ TTC", "Nom de domaine, serveur, configuration"],
+                                ["Création d'identité visuelle (option)", "Voir section dédiée", "Logo, charte graphique, signature d'email sur mesure"],
                                 ["Pack création de site standard", "2000€ TTC", "Comprend tous les éléments précédents"],
                             ],
                         },
@@ -107,7 +127,7 @@ const Tarifs = () => {
                             type: "Site carte de visite (one page)",
                             details: [
                                 ["Refonte", "150€ TTC", "Redéveloppement et optimisation"],
-                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
+                                ["Création d'identité visuelle (option)", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
                                 ["Pack refonte de site one page", "250€ TTC", "Comprend tous les éléments précédents"],
                             ],
                         },
@@ -117,7 +137,7 @@ const Tarifs = () => {
                                 ["Audit du site actuel", "100€ TTC", "Évaluation de l'UX/UI et des performances"],
                                 ["Réalisation des maquettes", "200€ TTC", "Nouveau design + réorganisation"],
                                 ["Refonte", "400€ TTC", "Redéveloppement et optimisation"],
-                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
+                                ["Création d'identité visuelle (option)", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
                                 ["Pack refonte de site vitrine", "700€ TTC", "Comprend tous les éléments précédents"],
                             ],
                         },
@@ -127,7 +147,7 @@ const Tarifs = () => {
                                 ["Audit du site actuel", "150€ TTC", "Évaluation de l'UX/UI et des performances"],
                                 ["Réalisation des maquettes", "250€ TTC", "Nouveau design + réorganisation"],
                                 ["Refonte", "700€ TTC", "Redéveloppement et optimisation"],
-                                ["Création d'identité visuelle", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
+                                ["Création d'identité visuelle (option)", "Voir section dédiée", "Logo, charte, signature (optionnel)"],
                                 ["Pack refonte de site standard", "1100€ TTC", "Comprend tous les éléments précédents"],
                             ],
                         },
@@ -142,9 +162,9 @@ const Tarifs = () => {
                         {
                             type: "",
                             details: [
-                                ["Création d'un logo", "100€ TTC", "Format SVG, JPEG, PNG"],
-                                ["Signature d'email sur mesure", "50€ TTC", "Signature HTML/CSS personnalisée"],
-                                ["Charte graphique", "100€ TTC", "Cahier des normes graphiques (couleurs, typos, etc.)"],
+                                ["Création d'un logo (option)", "100€ TTC", "Format SVG, JPEG, PNG"],
+                                ["Signature d'email sur mesure (option)", "50€ TTC", "Signature HTML/CSS personnalisée"],
+                                ["Charte graphique (option)", "100€ TTC", "Cahier des normes graphiques (couleurs, typos, etc.)"],
                                 ["Pack création d'identité visuelle", "200€ TTC", "Comprend tous les éléments précédents"],
                             ],
                         },

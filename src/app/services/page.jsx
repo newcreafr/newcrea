@@ -12,9 +12,9 @@ export default function Services() {
         <>
             <section className="mx-auto px-4">
                 <H1>Nos services</H1>
-                <p className="text-center normal-text">
+                <p className="text-left normal-text max-w-4xl mx-auto">
                     Notre mission chez <strong>NewCrea</strong> : vous aider à exister pleinement en ligne, sans complexité.<br/>
-                    <strong>Site internet</strong>, <strong>refonte</strong> ou <strong>logo</strong> : on vous accompagne de façon simple, claire et personnalisée.
+                    <strong>Site internet</strong>, <strong>refonte</strong> ou <strong>identité visuelle</strong> : on vous accompagne de façon simple, claire et personnalisée.
                 </p>
             </section>
             <section className="mx-auto px-4">
@@ -35,7 +35,7 @@ export default function Services() {
                 <ServiceSection
                     title="Création d'identité visuelle"
                     desc="Un logo professionnel, simple et reconnaissable. Votre logo, c’est la première impression que vous laissez. On crée pour vous une identité visuelle sur mesure, adaptée à votre activité et facile à décliner sur tous vos supports (site, réseaux, cartes…)."
-                    img="/img/creation-logo.svg"
+                    img="/img/creation-identite-visuelle.svg"
                     route="/services/creation-identite-visuelle"
                     reverse={false}
                 />

@@ -36,12 +36,12 @@ const APropos = () => {
                             <span className="small-text text-smTextWhtColor">Pour identifier vos leviers digitaux</span>
                         </li>
                         <li className="p-4 rounded-lg border border-borderColor">
-                            <span className="font-semibold block mb-1 normal-text">Maquettes sur mesure</span>
-                            <span className="small-text text-smTextWhtColor">Même avant signature, pour se projeter concrètement</span>
-                        </li>
-                        <li className="p-4 rounded-lg border border-borderColor">
                             <span className="font-semibold block mb-1 normal-text">Accompagnement humain</span>
                             <span className="small-text text-smTextWhtColor">Pédagogie, écoute et transparence à chaque étape</span>
+                        </li>
+                        <li className="p-4 rounded-lg border border-borderColor">
+                            <span className="font-semibold block mb-1 normal-text">Tarification modulaire</span>
+                            <span className="small-text text-smTextWhtColor">Vous ne payez que pour ce dont vous avez vraiment besoin</span>
                         </li>
                     </ul>
 
@@ -59,7 +59,7 @@ const APropos = () => {
                         <h2>Notre équipe</h2>
                     </div>
 
-                    <p className="mb-6 normal-text text-center">
+                    <p className="mb-6 normal-text text-center ">
                         <strong>NewCrea</strong>, c’est une équipe jeune, passionnée, et complémentaire. Fondée
                         par <strong>Jules Flautat</strong> et <strong>Emilien Marotta</strong>, diplômés en MIASHS,
                         notre agence repose
@@ -112,15 +112,15 @@ const APropos = () => {
                         <h3 className="font-semibold normal-text mb-3">Une approche personnalisée</h3>
                         <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">
                             <li>Étude de l’activité, des objectifs et de la clientèle</li>
-                            <li>Audits et maquettes offerts avant engagement</li>
+                            <li>Audits et maquettes personnalisées</li>
                         </ul>
                     </div>
 
                     <div className="border border-borderColor rounded-xl p-6">
                         <h3 className="font-semibold normal-text mb-3">Une vraie proximité</h3>
                         <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">
-                            <li>Agence à taille humaine, accessible et transparente</li>
-                            <li>Rendez-vous physiques, suivi personnalisé</li>
+                            <li>Relation étroite avec nos clients</li>
+                            <li>Rendez-vous physiques dans la mesure du possible</li>
                         </ul>
                     </div>
 
@@ -128,14 +128,14 @@ const APropos = () => {
                         <h3 className="font-semibold normal-text mb-3">Une offre accessible</h3>
                         <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">
                             <li>Tarifs justes, pensés pour les TPE/PME</li>
-                            <li>Aide à la recherche de subventions</li>
+                            <li>Possibilité de déduire certains coûts</li>
                         </ul>
                     </div>
 
                     <div className="border border-borderColor rounded-xl p-6">
-                        <h3 className="font-semibold normal-text mb-3">Des résultats mesurables</h3>
+                        <h3 className="font-semibold normal-text mb-3">Des résultats tangibles</h3>
                         <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">
-                            <li>Sites optimisés pour convertir (SEO, rapidité, UX)</li>
+                            <li>Sites optimisés pour convertir (SEO, rapidité, UX/UI)</li>
                             <li>Plus de visibilité, plus de clients, plus de ventes</li>
                         </ul>
                     </div>

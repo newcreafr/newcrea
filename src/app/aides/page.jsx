@@ -11,9 +11,9 @@ const Aides = () => {
     return (
         <>
             <section className="text-center px-4">
-                <div className="max-w-2xl mx-auto">
+                <div className="max-w-4xl mx-auto">
                     <H1>Obtenez des aides</H1>
-                    <p className="normal-text ">
+                    <p className="normal-text">
                         Découvrez ici les aides financières disponibles pour accompagner la transformation numérique de votre entreprise.
                     </p>
 

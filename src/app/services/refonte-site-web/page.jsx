@@ -9,10 +9,10 @@ export const metadata = {
 const RefonteSite = () => {
     return (
         <>
-            <section className="text-center px-4">
+            <section className="text-left px-4">
                 <H1>Refonte de site web</H1>
-                <p className="normal-text max-w-3xl mx-auto">
-                    Ce que vos visiteurs voient en ligne, c’est ce qu’ils pensent de vous.<br/>
+                <p className="normal-text max-w-4xl mx-auto">
+                    Ce que vos visiteurs voient en ligne, c’est ce qu’ils pensent de vous.
                     Un site mal conçu peut nuire à votre <strong>crédibilité</strong>, même si votre travail est excellent.<br/><br/>
                     Chez <strong>NewCrea</strong>, on reconstruit votre site avec un design moderne, une navigation claire et un message qui inspire confiance.
                 </p>
@@ -29,38 +29,13 @@ const RefonteSite = () => {
 
             <section className="text-center px-4">
                 <h2>Pourquoi envisager une refonte ?</h2>
-                <p className="max-w-2xl mx-auto mb-12 normal-text">
-                    Si votre site donne une mauvaise impression, c’est votre entreprise qu’on juge.
-                    Un design daté, une navigation confuse ou une mauvaise adaptation mobile peuvent vous faire perdre des opportunités.<br/>
+                <p className="max-w-4xl mx-auto mb-12 normal-text text-left">
+                    Si votre site donne une <strong>mauvaise impression</strong>, c’est votre entreprise que l’on juge.
+                    Un design daté, une navigation confuse ou une mauvaise adaptation mobile peuvent vous faire <strong>perdre des opportunités</strong>.<br/>
                     Une refonte permet de repartir sur des bases solides, alignées avec vos objectifs.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left">
-                    <div className="bg-white rounded-lg p-6 border border-borderColor">
-                        <h3 className="normal-text font-semibold text-green-700 mb-4">Ce que nous améliorons</h3>
-                        <ul className="space-y-3 ">
-                            <li className="flex items-start gap-2 small-text">
-                                <span className="text-green-500 text-xl select-none">✔</span>
-                                Une navigation fluide et agréable pour vos visiteurs
-                            </li>
-                            <li className="flex items-start gap-2 small-text">
-                                <span className="text-green-500 text-xl select-none">✔</span>
-                                Un site rapide, responsive et performant
-                            </li>
-                            <li className="flex items-start gap-2 small-text">
-                                <span className="text-green-500 text-xl select-none">✔</span>
-                                Un design clair, moderne et professionnel
-                            </li>
-                            <li className="flex items-start gap-2 small-text">
-                                <span className="text-green-500 text-xl select-none">✔</span>
-                                Une meilleure visibilité sur les moteurs de recherche (SEO)
-                            </li>
-                            <li className="flex items-start gap-2 small-text">
-                                <span className="text-green-500 text-xl select-none">✔</span>
-                                Une image cohérente avec votre entreprise actuelle
-                            </li>
-                        </ul>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
 
                     <div className="bg-white rounded-lg p-6 border border-borderColor">
                         <h3 className="normal-text font-semibold text-red-700 mb-4">Les risques d’un site obsolète</h3>
@@ -87,14 +62,42 @@ const RefonteSite = () => {
                             </li>
                         </ul>
                     </div>
+
+                    <div className="bg-white rounded-lg p-6 border border-borderColor">
+                        <h3 className="normal-text font-semibold text-green-700 mb-4">Ce que nous améliorons</h3>
+                        <ul className="space-y-3 ">
+                            <li className="flex items-start gap-2 small-text">
+                                <span className="text-green-500 text-xl select-none">✔</span>
+                                Une navigation fluide et agréable pour vos visiteurs
+                            </li>
+                            <li className="flex items-start gap-2 small-text">
+                                <span className="text-green-500 text-xl select-none">✔</span>
+                                Un site rapide, responsive et performant
+                            </li>
+                            <li className="flex items-start gap-2 small-text">
+                                <span className="text-green-500 text-xl select-none">✔</span>
+                                Un design clair, moderne et professionnel
+                            </li>
+                            <li className="flex items-start gap-2 small-text">
+                                <span className="text-green-500 text-xl select-none">✔</span>
+                                Une meilleure visibilité sur les moteurs de recherche (SEO)
+                            </li>
+                            <li className="flex items-start gap-2 small-text">
+                                <span className="text-green-500 text-xl select-none">✔</span>
+                                Une image cohérente avec votre entreprise actuelle
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </section>
 
             <section className="text-center px-4">
                 <h2>Votre site est-il dépassé ?</h2>
-                <p className="normal-text max-w-xl mx-auto mb-8">
-                    Vous vous demandez si votre site est toujours à la hauteur ?<br/>
-                    Vérifiez en quelques secondes les performances de votre site grâce à un <strong>outil gratuit</strong> comme PageSpeed Insights.
+                <p className="normal-text max-w-4xl mx-auto mb-8 text-left">
+                    Vous vous demandez si votre site est toujours à la hauteur ?
+                    Vérifiez en quelques secondes les performances de votre site grâce à un <strong>outil
+                    gratuit</strong> comme PageSpeed Insights.
                 </p>
                 <a
                     href="https://pagespeed.web.dev"

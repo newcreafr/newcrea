@@ -1,5 +1,6 @@
 import H1 from "@/components/H1.jsx";
 import CTA from "@/components/CTA.jsx";
+import Link from "next/link";
 
 export const metadata = {
     title: "Création de site web • Gagnez en visibilité",
@@ -9,10 +10,10 @@ export const metadata = {
 const CreationSite = () => {
     return (
         <>
-            <section className="text-center px-4">
+            <section className="text-left px-4">
                 <H1>Création de site web sur-mesure</H1>
-                <p className="normal-text max-w-3xl mx-auto">
-                    Un <strong>site internet</strong> bien pensé, ce n’est pas juste une vitrine.<br/>
+                <p className="normal-text max-w-4xl mx-auto">
+                    Un <strong>site internet</strong> bien pensé, ce n’est pas juste une vitrine.
                     C’est un <strong>véritable levier</strong> pour faire grandir votre activité : attirer de nouveaux clients, rassurer vos prospects et affirmer votre présence en ligne.<br/><br/>
                     Chez <strong>NewCrea</strong>, on conçoit des sites sur mesure, pensés pour être utiles, efficaces et vraiment alignés avec ce que vous êtes.
                 </p>
@@ -70,22 +71,16 @@ const CreationSite = () => {
                     Des aides pour réduire vos coûts
                 </h2>
 
-                <div className="max-w-2xl mx-auto space-y-4">
-                    <p className="normal-text">
-                        Saviez-vous qu’il existe des subventions pour financer une partie de votre site web ?
+                <div className="max-w-4xl mx-auto text-left flex flex-col items-center">
+                    <p className="normal-text mb-8">
+                        Saviez-vous qu’il existe des <strong>aides</strong> pour financer la création de votre site web ?
                         Vous pouvez bénéficier d’aides régionales, de crédits d’impôt ou encore de dispositifs publics
                         pour soutenir votre présence en ligne.
                     </p>
 
-                    <p className="normal-text">
-                        Chez NewCrea, on vous aide à identifier ces aides et à en profiter facilement.
-                        Un formulaire gratuit et sans engagement vous permettra bientôt de tester votre éligibilité en
-                        quelques clics.
-                    </p>
-                    <br/>
-                    <p className="normal-text">
-                        Le formulaire est en cours de création et sera bientôt disponible.
-                    </p>
+                    <Link href="/aides/" className="inline-block normal-text text-center text-balance rounded-full border-2 border-paletteColor1 bg-white px-6 py-3 text-paletteColor1 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-paletteColor1 hover:text-paletteColor3">
+                        Consulter les aides
+                    </Link>
                 </div>
             </section>
 

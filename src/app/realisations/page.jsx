@@ -9,9 +9,9 @@ export const metadata = {
 const Realisations = () => {
     return (
         <>
-            <section className="px-4 text-center">
+            <section className="px-4 text-left">
                 <H1>Nos réalisations</H1>
-                <p className="mt-6 normal-text max-w-3xl mx-auto">
+                <p className="mt-6 normal-text max-w-4xl mx-auto">
                     Des projets concrets, des résultats visibles.
                     Chez NewCrea, chaque réalisation est conçue sur mesure pour répondre aux besoins réels de nos clients.
                 </p>
@@ -19,11 +19,11 @@ const Realisations = () => {
 
             <section className="px-4 text-center">
                 <h2>Bientôt en ligne</h2>
-                <p className="max-w-2xl mx-auto mb-6 normal-text">
+                <p className="max-w-4xl mx-auto mb-6 normal-text text-left">
                     Cette page vous présentera prochainement nos projets les plus marquants : sites web, refontes, logos et identités visuelles.
                     L’occasion de découvrir notre travail concret, nos méthodes, et les résultats obtenus.
                 </p>
-                <p className="max-w-xl mx-auto normal-text">
+                <p className="max-w-4xl mx-auto normal-text text-left">
                     Revenez bientôt pour vous inspirer ou contactez-nous directement pour en discuter.
                 </p>
             </section>
