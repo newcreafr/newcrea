@@ -36,7 +36,7 @@ export default function HomeClient() {
                         Découvrir nos services
                     </Link>
                 </div>
-                <LazyVideo className="m-16 mx-auto lg:w-[70%] max-w-4xl" link="/videos/presentation.webm"/>
+                <LazyVideo className="m-16 mx-auto lg:w-[70%] max-w-4xl" link="/videos/presentation.mp4"/>
             </section>
 
             <section className="px-4">

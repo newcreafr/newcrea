@@ -71,7 +71,7 @@ const APropos = () => {
 
                     <p className="mb-6 normal-text text-center max-w-4xl mx-auto">
                         <strong>NewCrea</strong>, c’est une équipe jeune, passionnée, et complémentaire. Fondée
-                        par <strong>Jules Flautat</strong> et <strong>Emilien Marotta</strong>, diplômés en MIASHS,
+                        par <strong>Jules Flautat</strong> et <strong>Emilien Marotta</strong>, diplômés en informatique,
                         notre agence repose
                         sur la <strong>créativité</strong>, l’<strong>exigence</strong> et la <strong>proximité</strong>.
                     </p>
