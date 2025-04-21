@@ -551,7 +551,7 @@ const MentionsLegales = () => {
 
                 <h3>7. Durée de conservation</h3>
 
-                <p>
+                <p className="normal-text whitespace-pre-line">
                     Les données collectées sont conservées pour une durée maximale de douze (12) mois à compter du dernier contact initié par l’utilisateur, sauf obligation légale imposant une durée de conservation plus longue, ou suppression anticipée sur demande expresse.
                     <br/><br/>
                     Au-delà de cette période, les données sont automatiquement supprimées des systèmes actifs.
@@ -608,7 +608,7 @@ const MentionsLegales = () => {
                 <p className="normal-text whitespace-pre-line">
                     La présente politique est susceptible d’être modifiée ou mise à jour à tout moment, notamment pour tenir compte d’évolutions législatives ou réglementaires. Il est donc recommandé de consulter régulièrement cette page.
                 </p>
-                <p className="normal-text pt-16 text-smTextWhtColor">Dernière mise à jour : 15 avril 2025.</p>
+                <p className="normal-text pt-16 text-smTextWhtColor">Dernière mise à jour : 21 avril 2025.</p>
             </div>
         </section>
     );
