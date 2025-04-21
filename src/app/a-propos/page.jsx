@@ -25,7 +25,7 @@ const APropos = () => {
                     </p>
 
                     <Image
-                        src="/img/desktop.jpg"
+                        src="/img/desktop.webp"
                         alt="Image de desktop"
                         width={576}
                         height={384}

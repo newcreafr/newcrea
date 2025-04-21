@@ -7,6 +7,7 @@ import H1 from "@/components/H1";
 import Link from "next/link";
 import Offre from "@/components/Offre";
 import LazyVideo from "@/components/LazyVideo";
+import Image from "next/image";
 
 const Processus = dynamic(() => import("@/components/Processus"), {
     loading: () => <Spinner />,
@@ -35,14 +36,15 @@ export default function HomeClient() {
                         Découvrir nos services
                     </Link>
                 </div>
-                <LazyVideo className="m-16 mx-auto lg:w-[70%] max-w-4xl" link="/videos/presentation.mp4" />
+                <LazyVideo className="m-16 mx-auto lg:w-[70%] max-w-4xl" link="/videos/presentation.webm"/>
             </section>
 
             <section className="px-4">
                 <div className="text-center">
                     <h2 id="offers">Ce que nous proposons</h2>
                 </div>
-                <div className="flex h-auto flex-col items-center justify-between gap-4 lg:flex-row lg:items-stretch max-w-[1500px] mx-auto">
+                <div
+                    className="flex h-auto flex-col items-center justify-between gap-4 lg:flex-row lg:items-stretch max-w-[1500px] mx-auto">
                     <Offre
                         imageSrc="/img/design-logo.svg"
                         altText="Image représentation la création"
@@ -70,39 +72,48 @@ export default function HomeClient() {
                 </div>
             </section>
 
-            <section className="mx-auto px-4">
-                <div className="text-center">
-                    <h2>
-                        Pourquoi choisir NewCrea ?
-                    </h2>
-                    <p className="normal-text mb-4">
-                        Une approche humaine, stratégique et adaptée à votre réalité.
-                    </p>
-                </div>
-                <div className="flex h-auto flex-col lg:items-stretch items-center justify-between gap-4 lg:flex-row max-w-[1500px] mx-auto">
-                    <PourquoiNousSection
-                        img="/img/analyse-personnalisee.svg"
-                        alt="Image d'une loupe pour représenter l'analyse personnalisée"
-                        title="Analyse personnalisée"
-                        desc="Avant toute proposition, nous étudions votre activité, vos enjeux et vos objectifs pour vous apporter une solution pertinente et parfaitement adaptée."
-                    />
-                    <PourquoiNousSection
-                        img="/img/accompagnement-humain.svg"
-                        alt="Image d'une poignée de main pour représenter l'accompagnement humain"
-                        title="Accompagnement humain"
-                        desc="Nous échangeons avec vous de façon claire et transparente, pour bâtir un projet digital à votre image."
-                    />
-                    <PourquoiNousSection
-                        img="/img/prix-justes.svg"
-                        alt="Image d'argent pour représenter les prix justes."
-                        title="Des prix justes"
-                        desc="Nos offres sont pensées pour les TPE/PME : efficacité, visibilité et budget maîtrisé. Vous payez uniquement pour ce dont vous avez réellement besoin."
-                    />
+            <section className="px-4">
+                <div className="max-w-6xl mx-auto">
+                    <div className="text-center mb-10">
+                        <h2>Pourquoi choisir NewCrea ?</h2>
+                        <p className="normal-text max-w-2xl mx-auto mt-2">
+                            Une approche humaine, stratégique et adaptée à votre réalité.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col-reverse lg:grid lg:grid-cols-3 gap-8 items-center">
+                        <div className="lg:col-span-1 space-y-4">
+                            <p className="normal-text">
+                                Avant toute proposition, nous étudions votre activité, vos enjeux et vos objectifs pour
+                                vous proposer une solution vraiment pertinente.
+                            </p>
+                            <p className="normal-text">
+                                Nous échangeons avec vous de manière claire et transparente pour bâtir un projet qui
+                                vous ressemble, dans le respect de vos moyens.
+                            </p>
+                            <p className="normal-text">
+                                Nos offres sont pensées pour les petites structures : efficacité, visibilité, budget
+                                maîtrisé. Vous ne payez que pour ce dont vous avez réellement besoin.
+                            </p>
+                        </div>
+
+                        <div className="lg:col-span-2 flex justify-center">
+                            <Image
+                                src="/img/work.webp"
+                                alt="Image représentant un travail collaboratif"
+                                width={800}
+                                height={500}
+                                loading="lazy"
+                                className="w-[85%] max-w-[700px] rounded-xl border border-paletteColor2 object-cover"
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <Processus />
-            <FAQ />
+
+            <Processus/>
+            <FAQ/>
             <CTA
                 title="Envie de booster votre présence en ligne ?"
                 route="contact"

@@ -58,20 +58,26 @@ const RefonteSite = () => {
                 <H1>Refonte de site web</H1>
                 <p className="normal-text max-w-4xl mx-auto">
                     Ce que vos visiteurs voient en ligne, c’est ce qu’ils pensent de vous.
-                    Un site mal conçu peut nuire à votre <strong>crédibilité</strong>, même si votre travail est excellent.<br/><br/>
-                    Chez <strong>NewCrea</strong>, on reconstruit votre site avec un design moderne, une navigation claire et un message qui inspire confiance.
+                    Un site mal conçu peut nuire à votre <strong>crédibilité</strong>, même si votre travail est
+                    excellent.<br/><br/>
+                    Chez <strong>NewCrea</strong>, on reconstruit votre site avec un design moderne, une navigation
+                    claire et un message qui inspire confiance.
                 </p>
             </section>
 
-            <div className="w-[90%] mx-auto max-w-[400px] mt-16 px-4">
-                <Image src="/img/refonte-site-web.svg" alt="Illustration refonte de site web" width={400} height={300} loading="lazy"/>
+            <div className="px-4 w-[90%] mx-auto max-w-2xl mt-16">
+                <Image src="/img/refonte-site-web.webp" alt="Illustration refonte de site web" width={400} height={300}
+                       loading="lazy"
+                       className="w-full mx-auto rounded-xl border border-paletteColor2 object-cover"
+                />
             </div>
 
             <section className="text-center px-4">
                 <h2>Pourquoi envisager une refonte ?</h2>
                 <p className="max-w-4xl mx-auto mb-12 normal-text text-left">
                     Si votre site donne une <strong>mauvaise impression</strong>, c’est votre entreprise que l’on juge.
-                    Un design daté, une navigation confuse ou une mauvaise adaptation mobile peuvent vous faire <strong>perdre des opportunités</strong>.<br/>
+                    Un design daté, une navigation confuse ou une mauvaise adaptation mobile peuvent vous faire <strong>perdre
+                    des opportunités</strong>.<br/>
                     Une refonte permet de repartir sur des bases solides, alignées avec vos objectifs.
                 </p>
 
@@ -143,16 +149,18 @@ const RefonteSite = () => {
                     </p>
                     <ul className="list-disc pl-5 mt-4 text-left space-y-2 small-text">
                         <li>
-                            <strong>Audit de votre site actuel</strong> : les défauts du site actuel sont identifiés et vos besoins sont clairs
+                            <strong>Audit de votre site actuel</strong> : les défauts du site actuel sont identifiés et
+                            vos besoins sont clairs
                         </li>
                         <li>
-                            <strong>Réalisation des maquettes</strong> : vous disposez d’un aperçu détaillé pour ordinateur et mobile
+                            <strong>Réalisation des maquettes</strong> : vous disposez d’un aperçu détaillé pour
+                            ordinateur et mobile
                         </li>
                     </ul>
                 </div>
 
                 <div className="space-y-6 max-w-4xl mx-auto">
-                    {tarifs.map(({ type, details }, i) => (
+                    {tarifs.map(({type, details}, i) => (
                         <div key={i}>
                             <div className="text-center">
                                 <h3>{type}</h3>
@@ -185,7 +193,8 @@ const RefonteSite = () => {
                 <h2>Votre site est-il dépassé ?</h2>
                 <p className="normal-text max-w-4xl mx-auto mb-8 text-left">
                     Vous vous demandez si votre site est toujours à la hauteur ?
-                    Vérifiez en quelques secondes les performances de votre site grâce à un <strong>outil gratuit</strong> comme PageSpeed Insights.
+                    Vérifiez en quelques secondes les performances de votre site grâce à un <strong>outil
+                    gratuit</strong> comme PageSpeed Insights.
                 </p>
                 <a
                     href="https://pagespeed.web.dev"

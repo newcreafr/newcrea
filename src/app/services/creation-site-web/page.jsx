@@ -69,8 +69,10 @@ const CreationSite = () => {
                 </p>
             </section>
 
-            <div className="px-4 w-[90%] mx-auto max-w-[400px] mt-16">
-                <Image src="/img/creation-site-web.svg" alt="Illustration création de site web" width={400} height={300} loading="lazy" />
+            <div className="px-4 w-[90%] mx-auto max-w-2xl mt-16">
+                <Image src="/img/creation-site-web.webp" alt="Illustration création de site web" width={400} height={300} loading="lazy"
+                       className="w-full mx-auto rounded-xl border border-paletteColor2 object-cover"
+                />
             </div>
 
             <section className="text-center px-4">

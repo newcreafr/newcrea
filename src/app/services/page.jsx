@@ -21,21 +21,21 @@ export default function Services() {
                 <ServiceSection
                     title="Création de site web"
                     desc="Un vrai outil pour développer votre activité. Votre site n’est pas qu’une vitrine : il doit convaincre, rassurer et donner envie d’agir. On conçoit avec vous un site qui valorise votre offre, attire les bons visiteurs, et vous permet d’atteindre vos objectifs (visibilité, ventes, contacts…)."
-                    img="/img/creation-site-web.svg"
+                    img="/img/creation-site-web.webp"
                     route="/services/creation-site-web"
                     reverse={false}
                 />
                 <ServiceSection
                     title="Refonte de site web"
                     desc="Donnez un second souffle à votre site. Votre site ne reflète plus votre activité, il est lent, dépassé ou peu lisible sur mobile ? On le repense entièrement pour en faire un outil clair, moderne et performant : nouveau design, navigation simplifiée, visibilité renforcée."
-                    img="/img/refonte-site-web.svg"
+                    img="/img/refonte-site-web.webp"
                     route="/services/refonte-site-web"
                     reverse={true}
                 />
                 <ServiceSection
                     title="Création d'identité visuelle"
                     desc="Un logo professionnel, simple et reconnaissable. Votre logo, c’est la première impression que vous laissez. On crée pour vous une identité visuelle sur mesure, adaptée à votre activité et facile à décliner sur tous vos supports (site, réseaux, cartes…)."
-                    img="/img/creation-identite-visuelle.svg"
+                    img="/img/creation-identite-visuelle.webp"
                     route="/services/creation-identite-visuelle"
                     reverse={false}
                 />

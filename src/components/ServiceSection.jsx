@@ -20,6 +20,7 @@ const ServiceSection = ({ title, desc, img, route, reverse }) => {
                     height={300}
                     className="w-full h-auto"
                     loading="lazy"
+                    className="w-full max-w-xl mx-auto rounded-xl border border-paletteColor2 object-cover"
                 />
             </div>
         </div>

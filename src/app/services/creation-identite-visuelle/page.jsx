@@ -25,20 +25,27 @@ const CreationIdentiteVisuelle = () => {
             <section className="text-center px-4">
                 <H1>Création d'identité visuelle</H1>
                 <p className="normal-text max-w-4xl mx-auto text-left">
-                    Un style <strong>simple</strong>, <strong>clair</strong>, et <strong>reconnaissable</strong> en un clin d’œil.<br/><br/>
-                    Chez <strong>NewCrea</strong>, nous concevons des identités visuelles modernes, épurées, et adaptées à tous les supports : site web, réseaux sociaux, cartes de visite, enseignes...
+                    Un style <strong>simple</strong>, <strong>clair</strong>, et <strong>reconnaissable</strong> en un
+                    clin d’œil.<br/><br/>
+                    Chez <strong>NewCrea</strong>, nous concevons des identités visuelles modernes, épurées, et adaptées
+                    à tous les supports : site web, réseaux sociaux, cartes de visite, enseignes...
                 </p>
             </section>
 
-            <div className="w-[90%] mx-auto max-w-[400px] mt-16 px-4">
-                <Image src="/img/creation-identite-visuelle.svg" alt="Illustration création d'identité visuelle" width={400} height={300} loading="lazy"/>
+            <div className="px-4 w-[90%] mx-auto max-w-2xl mt-16">
+                <Image src="/img/creation-identite-visuelle.webp" alt="Illustration création d'identité visuelle" width={400} height={300}
+                       loading="lazy"
+                       className="w-full mx-auto rounded-xl border border-paletteColor2 object-cover"
+                />
             </div>
 
             <section className="text-center px-4">
                 <h2>Des logos polyvalents, pensés pour durer</h2>
                 <p className="max-w-4xl mx-auto normal-text text-left">
-                    Nos créations sont optimisées pour être <strong>lisibles</strong> et <strong>impactantes</strong>, même en petit format.
-                    Elles s’adaptent à <strong>tous les contextes</strong> : impression, web, écrans mobiles ou affichage vitrine.
+                    Nos créations sont optimisées pour être <strong>lisibles</strong> et <strong>impactantes</strong>,
+                    même en petit format.
+                    Elles s’adaptent à <strong>tous les contextes</strong> : impression, web, écrans mobiles ou
+                    affichage vitrine.
                 </p>
             </section>
 
@@ -47,7 +54,7 @@ const CreationIdentiteVisuelle = () => {
                     <h2>Tarifs pour la création d'identité visuelle</h2>
                 </div>
                 <div className="space-y-6 max-w-4xl mx-auto">
-                    {tarifs.map(({ type, details }, i) => (
+                    {tarifs.map(({type, details}, i) => (
                         <div key={i}>
                             {type && (
                                 <div className="text-center">
