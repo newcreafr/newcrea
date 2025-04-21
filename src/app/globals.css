@@ -130,7 +130,7 @@
     }
 
     h3 {
-        @apply text-lg font-bold md:text-xl lg:text-2xl;
+        @apply text-lg font-bold md:text-xl lg:text-2xl mb-4 xs:underline decoration-paletteColor2;
     }
 
     section {

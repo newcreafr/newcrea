@@ -8,6 +8,50 @@ export const metadata = {
 };
 
 const RefonteSite = () => {
+    const descriptions = {
+        "Site carte de visite (one page)": "Une page unique qui présente l’essentiel : qui vous êtes, ce que vous proposez, et comment vous contacter.",
+        "Site vitrine (2 à 5 pages)": "Une structure simple pour présenter vos services, votre entreprise, vos réalisations, et faciliter les prises de contact.",
+        "Site standard (6 à 10 pages)": "Un site plus complet pour détailler vos services, intégrer des pages dédiées, et améliorer le référencement.",
+        "Site complexe": "Pour des besoins spécifiques : e-commerce, fonctionnalités avancées, ou architecture sur mesure."
+    };
+
+    const tarifs = [
+        {
+            type: "Site carte de visite (one page)",
+            details: [
+                ["Refonte", "150€ TTC", "Redéveloppement et optimisation"],
+                ["Création d'identité visuelle (optionnel)", "Voir section dédiée", "Logo, charte, signature (optionnelnel)"],
+                ["Pack refonte de site one page", "250€ TTC", "Comprend tous les éléments précédents"],
+            ],
+        },
+        {
+            type: "Site vitrine (2 à 5 pages)",
+            details: [
+                ["Audit du site actuel", "100€ TTC", "Évaluation de l'UX/UI et des performances"],
+                ["Réalisation des maquettes", "200€ TTC", "Nouveau design + réorganisation"],
+                ["Refonte", "400€ TTC", "Redéveloppement et optimisation"],
+                ["Création d'identité visuelle (optionnel)", "Voir section dédiée", "Logo, charte, signature (optionnelnel)"],
+                ["Pack refonte de site vitrine", "700€ TTC", "Comprend tous les éléments précédents"],
+            ],
+        },
+        {
+            type: "Site standard (6 à 10 pages)",
+            details: [
+                ["Audit du site actuel", "150€ TTC", "Évaluation de l'UX/UI et des performances"],
+                ["Réalisation des maquettes", "250€ TTC", "Nouveau design + réorganisation"],
+                ["Refonte", "700€ TTC", "Redéveloppement et optimisation"],
+                ["Création d'identité visuelle (optionnel)", "Voir section dédiée", "Logo, charte, signature (optionnelnel)"],
+                ["Pack refonte de site standard", "1100€ TTC", "Comprend tous les éléments précédents"],
+            ],
+        },
+        {
+            type: "Site complexe",
+            details: [
+                ["Pack refonte de site complexe", "À partir de 1800€ TTC", "Sur devis selon le besoin"],
+            ],
+        },
+    ];
+
     return (
         <>
             <section className="text-left px-4">
@@ -32,7 +76,6 @@ const RefonteSite = () => {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
-
                     <div className="bg-white rounded-lg p-6 border border-borderColor">
                         <h3 className="normal-text font-semibold text-red-700 mb-4">Les risques d’un site obsolète</h3>
                         <ul className="space-y-3 ">
@@ -84,16 +127,65 @@ const RefonteSite = () => {
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </section>
 
-            <section className="text-center px-4">
+            <section className="px-4 mt-16">
+                <div className="text-center max-w-4xl mx-auto">
+                    <h2>Tarifs pour la refonte de site web</h2>
+                </div>
+
+                <div className="text-center max-w-4xl mx-auto mb-8">
+                    <h3>Bon à savoir</h3>
+                    <p className="normal-text text-left">
+                        Certains éléments peuvent être <strong>déduits du montant total</strong> si vous les avez déjà
+                        préparés en amont (vous-même ou un expert) :
+                    </p>
+                    <ul className="list-disc pl-5 mt-4 text-left space-y-2 small-text">
+                        <li>
+                            <strong>Audit de votre site actuel</strong> : les défauts du site actuel sont identifiés et vos besoins sont clairs
+                        </li>
+                        <li>
+                            <strong>Réalisation des maquettes</strong> : vous disposez d’un aperçu détaillé pour ordinateur et mobile
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="space-y-6 max-w-4xl mx-auto">
+                    {tarifs.map(({ type, details }, i) => (
+                        <div key={i}>
+                            <div className="text-center">
+                                <h3>{type}</h3>
+                                {descriptions[type] && (
+                                    <p className="small-text text-smTextWhtColor mt-1 max-w-2xl mx-auto">{descriptions[type]}</p>
+                                )}
+                            </div>
+                            <div className="space-y-4 mt-4">
+                                {details.map(([label, price, desc], idx) => (
+                                    <div
+                                        key={`${i}-${idx}`}
+                                        className="flex justify-between border-b border-paletteColor2 pb-2"
+                                    >
+                                        <div className="w-full">
+                                            <div className="flex justify-between items-center">
+                                                <span className="font-medium small-text">{label}</span>
+                                                <span className="font-bold small-text text-right">{price}</span>
+                                            </div>
+                                            <p className="text-sm text-smTextWhtColor mt-1">{desc}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section className="text-center px-4 mt-16">
                 <h2>Votre site est-il dépassé ?</h2>
                 <p className="normal-text max-w-4xl mx-auto mb-8 text-left">
                     Vous vous demandez si votre site est toujours à la hauteur ?
-                    Vérifiez en quelques secondes les performances de votre site grâce à un <strong>outil
-                    gratuit</strong> comme PageSpeed Insights.
+                    Vérifiez en quelques secondes les performances de votre site grâce à un <strong>outil gratuit</strong> comme PageSpeed Insights.
                 </p>
                 <a
                     href="https://pagespeed.web.dev"
@@ -103,7 +195,6 @@ const RefonteSite = () => {
                 >
                     Tester mon site
                 </a>
-
             </section>
 
             <CTA

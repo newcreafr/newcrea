@@ -7,7 +7,19 @@ export const metadata = {
     description: "Logo, couleurs, typographies : nous façonnons une image de marque forte, cohérente et mémorable pour votre activité.",
 };
 
-const CreationLogo = () => {
+const CreationIdentiteVisuelle = () => {
+    const tarifs = [
+        {
+            type: "",
+            details: [
+                ["Création d'un logo (optionnel)", "100€ TTC", "Format SVG, JPEG, PNG"],
+                ["Signature d'email sur mesure (optionnel)", "50€ TTC", "Signature HTML/CSS personnalisée"],
+                ["Charte graphique (optionnel)", "100€ TTC", "Cahier des normes graphiques (couleurs, typos, etc.)"],
+                ["Pack création d'identité visuelle", "200€ TTC", "Comprend tous les éléments précédents"],
+            ]
+        }
+    ];
+
     return (
         <>
             <section className="text-center px-4">
@@ -30,6 +42,39 @@ const CreationLogo = () => {
                 </p>
             </section>
 
+            <section className="px-4 mt-16">
+                <div className="text-center max-w-4xl mx-auto">
+                    <h2>Tarifs pour la création d'identité visuelle</h2>
+                </div>
+                <div className="space-y-6 max-w-4xl mx-auto">
+                    {tarifs.map(({ type, details }, i) => (
+                        <div key={i}>
+                            {type && (
+                                <div className="text-center">
+                                    <h3>{type}</h3>
+                                </div>
+                            )}
+                            <div className="space-y-4">
+                                {details.map(([label, price, desc], idx) => (
+                                    <div
+                                        key={`${i}-${idx}`}
+                                        className="flex justify-between border-b border-paletteColor2 pb-2"
+                                    >
+                                        <div className="w-full">
+                                            <div className="flex justify-between items-center">
+                                                <span className="font-medium small-text">{label}</span>
+                                                <span className="font-bold small-text text-right">{price}</span>
+                                            </div>
+                                            <p className="text-sm text-smTextWhtColor mt-1">{desc}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
             <CTA
                 title="Besoin d’une identité visuelle ?"
                 desc="Créons ensemble une identité visuelle qui marquera les esprits. Un logo professionnel, moderne et adapté à votre image."
@@ -40,4 +85,4 @@ const CreationLogo = () => {
     );
 };
 
-export default CreationLogo;
+export default CreationIdentiteVisuelle;

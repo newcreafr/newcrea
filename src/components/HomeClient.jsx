@@ -45,7 +45,7 @@ export default function HomeClient() {
                 <div className="flex h-auto flex-col items-center justify-between gap-4 lg:flex-row lg:items-stretch max-w-[1500px] mx-auto">
                     <Offre
                         imageSrc="/img/design-logo.svg"
-                        altText="Web development logo"
+                        altText="Image représentation la création"
                         title="Création de site web"
                         description="Présentez votre activité, attirez de nouveaux clients et affirmez votre présence en ligne grâce à un site web conçu pour vous. Moderne, clair et fidèle à votre image, il renforce votre visibilité et inspire confiance dès les premières secondes."
                         price={0}
@@ -53,7 +53,7 @@ export default function HomeClient() {
                     />
                     <Offre
                         imageSrc="/img/design-logo.svg"
-                        altText="Web redesign logo"
+                        altText="Image représentation la création"
                         title="Refonte de site web"
                         description="Votre site ne reflète plus vos ambitions ? Nous le transformons pour qu’il devienne un atout : un design percutant, une expérience utilisateur fluide et des performances optimisées pour marquer les esprits."
                         price={0}
@@ -61,7 +61,7 @@ export default function HomeClient() {
                     />
                     <Offre
                         imageSrc="/img/design-logo.svg"
-                        altText="Logo logo"
+                        altText="Image représentation la création"
                         title="Création de votre logo"
                         description="Offrez une identité forte à votre entreprise avec un logo unique et mémorable. Nous créons un design sur-mesure qui reflète vos valeurs et capte l’attention dès le premier regard."
                         price={0}

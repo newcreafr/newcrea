@@ -13,16 +13,25 @@ const APropos = () => {
             <section className="px-4">
                 <H1>Qui sommes-nous ?</H1>
             </section>
-            <section className="px-4 max-w-4xl mx-auto">
+            <section className="px-4 mx-auto">
                 <div className="text-center">
                     <h2>Notre mission</h2>
                 </div>
-                <div className="space-y-6">
+                <div className="space-y-6 max-w-4xl mx-auto">
                     <p className="normal-text">
                         Chez <strong>NewCrea</strong>, nous croyons que chaque petite entreprise mérite une
                         <strong> présence en ligne professionnelle, efficace et à son image</strong>. Nous révélons le
                         potentiel digital des TPE et PME avec des solutions web sur mesure, accessibles et impactantes.
                     </p>
+
+                    <Image
+                        src="/img/desktop.jpg"
+                        alt="Image de desktop"
+                        width={576}
+                        height={384}
+                        loading="lazy"
+                        className="w-full max-w-xl mx-auto rounded-xl border border-paletteColor2 object-cover"
+                    />
 
                     <p className="normal-text">
                         <strong>Nous ne sommes pas une agence web parmi tant d’autres.</strong> Notre écoute, notre
@@ -55,19 +64,19 @@ const APropos = () => {
             </section>
 
             <section className="px-4 text-left mx-auto bg-paletteColor1 text-paletteColor3 w-full">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6">
+                <div className="px-4 sm:px-6">
                     <div className="text-center">
                         <h2>Notre équipe</h2>
                     </div>
 
-                    <p className="mb-6 normal-text text-center ">
+                    <p className="mb-6 normal-text text-center max-w-4xl mx-auto">
                         <strong>NewCrea</strong>, c’est une équipe jeune, passionnée, et complémentaire. Fondée
                         par <strong>Jules Flautat</strong> et <strong>Emilien Marotta</strong>, diplômés en MIASHS,
                         notre agence repose
                         sur la <strong>créativité</strong>, l’<strong>exigence</strong> et la <strong>proximité</strong>.
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-8 mb-6">
+                    <div className="grid md:grid-cols-2 gap-8 mb-6 max-w-4xl mx-auto">
                         <div className="p-6 rounded-xl border-paletteColor2 border">
                             <p className="font-semibold normal-text mb-1">Emilien Marotta</p>
                             <p className="text-smTextDrkColor small-text">
@@ -94,7 +103,7 @@ const APropos = () => {
                         loading="lazy"
                     />
 
-                    <p className="py-10 normal-text text-center">
+                    <p className="py-10 normal-text text-center max-w-4xl mx-auto">
                         Nous assurons nous-mêmes la relation client, la communication et le suivi de projet pour
                         une <strong>vision claire</strong> et une <strong>proximité authentique</strong>.
                     </p>
@@ -102,16 +111,16 @@ const APropos = () => {
             </section>
 
 
-            <section className="px-4 text-left max-w-4xl mx-auto">
-                <div className="text-center">
+            <section className="px-4 text-left">
+                <div className="text-center max-w-4xl mx-auto">
                     <h2>Pourquoi nous choisir</h2>
                 </div>
-                <p className="mb-6 normal-text">
+                <p className="mb-6 normal-text max-w-4xl mx-auto">
                     Nous ne faisons pas que créer des sites. Nous construisons des <strong>outils de
                     développement</strong>, des <strong>leviers d’image</strong> et des <strong>moteurs de
                     croissance</strong>.
                 </p>
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                     <div className="border border-borderColor rounded-xl p-6">
                         <h3 className="font-semibold normal-text mb-3">Une approche personnalisée</h3>
                         <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">

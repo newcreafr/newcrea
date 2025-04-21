@@ -6,6 +6,7 @@ import { MdMenu, MdClose } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Navbar() {
     const [isHovered, setIsHovered] = useState(false);
@@ -61,12 +62,15 @@ export default function Navbar() {
             <nav className="mx-auto flex w-[90%] items-center justify-between py-4">
                 {/* Logo */}
                 <Link href="/">
-                    <img
+                    <Image
                         src="/img/newcrea-logo.svg"
-                        alt="Logo Newcrea"
+                        alt="Logo de Newcrea"
                         className={`w-[40px] md:w-[60px] transition-transform duration-500 ${
-                            open ? "scale-110 rotate-[5deg]" : ""
+                        open ? "scale-110 rotate-[5deg]" : ""
                         }`}
+                        width={40}
+                        height={40}
+                        loading="lazy"
                     />
                 </Link>
 

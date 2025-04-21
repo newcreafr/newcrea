@@ -17,7 +17,7 @@ export default function Services() {
                     <strong>Site internet</strong>, <strong>refonte</strong> ou <strong>identité visuelle</strong> : on vous accompagne de façon simple, claire et personnalisée.
                 </p>
             </section>
-            <section className="mx-auto px-4">
+            <section className="mx-auto px-4 max-w-[1500px]">
                 <ServiceSection
                     title="Création de site web"
                     desc="Un vrai outil pour développer votre activité. Votre site n’est pas qu’une vitrine : il doit convaincre, rassurer et donner envie d’agir. On conçoit avec vous un site qui valorise votre offre, attire les bons visiteurs, et vous permet d’atteindre vos objectifs (visibilité, ventes, contacts…)."
