@@ -7,6 +7,8 @@ module.exports = {
     priority: 0.7,
     exclude: [
         '/not-found',
-        '/mentions-legales-politique-confidentialite'
+        '/mentions-legales-politique-confidentialite',
+        '/questionnaire-1',
+        '/questionnaire-2',
     ],
 };

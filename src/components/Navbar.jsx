@@ -38,12 +38,15 @@ export default function Navbar() {
                 return "À propos";
             case "/contact/":
                 return "Contact";
+            case "/questionnaire-1/":
+                return "Questionnaire";
+            case "/questionnaire-2/":
+                return "Questionnaire";
             default:
                 return "";
         }
     };
 
-    // Ferme le sous-menu si clic en dehors
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (
@@ -65,7 +68,7 @@ export default function Navbar() {
                     <Image
                         src="/img/newcrea-logo.svg"
                         alt="Logo de Newcrea"
-                        className={`w-[40px] md:w-[60px] transition-transform duration-500 ${
+                        className={`w-[40px] md:w-[60px] transition-transform duration-500 hover:scale-110 hover:rotate-[5deg] ${
                         open ? "scale-110 rotate-[5deg]" : ""
                         }`}
                         width={40}

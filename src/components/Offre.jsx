@@ -11,32 +11,29 @@ export default function Offre({
   route
 }) {
   return (
-      <div>
-        <div
-            className="flex h-full lg:pr-16 max-w-[500px] flex-col lg:flex-row justify-between gap-4 rounded-lg bg-paletteColor3 p-4 border border-borderColor items-center lg:items-start text-center lg:text-left">
-          <Image
-              alt={altText}
+    <div className="overflow-hidden flex flex-col h-full border border-borderColor hover:border-paletteColor2 hover:rounded-3xl rounded-lg transition-all duration-300">
+      <Image
               src={imageSrc}
-              width={40}
-              height={40}
+              alt={altText}
+              className="w-full"
+              width={200}
+              height={100}
               loading="lazy"
           />
-          <div className="flex flex-grow flex-col items-center lg:items-start gap-5 h-full">
-            <h3>{title}</h3>
-            <p className="text-smTextWhtColor small-text text-left">{description}</p>
-            <div className="mt-auto justify-self-end">
-              {/*<p className="mb-5 font-semibold small-text">À partir de {price}€ HT</p>*/}
-              <Link className="small-text underline-animation text-paletteColor2" href={route}>
-                En savoir plus
-              </Link>
-            </div>
+          <div className="p-4 flex flex-col flex-grow">
+              <span className="font-semibold block mb-1 normal-text">{title}</span>
+              <span className="small-text text-smTextWhtColor">{description}</span>
           </div>
-        </div>
+          <div className="p-4">
+              <Link className="small-text underline-animation text-paletteColor2" href={route}>
+                      En savoir plus
+              </Link>
+          </div>
       </div>
   );
 }
 
-Offre.propTypes = {
+  Offre.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   altText: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

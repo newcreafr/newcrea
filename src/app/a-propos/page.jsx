@@ -40,21 +40,6 @@ const APropos = () => {
                         solutions <strong>concrètes, esthétiques et efficaces</strong>.
                     </p>
 
-                    <ul className="grid md:grid-cols-3 gap-4">
-                        <li className="p-4 rounded-lg border border-borderColor">
-                            <span className="font-semibold block mb-1 normal-text">Audit personnalisé</span>
-                            <span className="small-text text-smTextWhtColor">Pour identifier vos leviers digitaux</span>
-                        </li>
-                        <li className="p-4 rounded-lg border border-borderColor">
-                            <span className="font-semibold block mb-1 normal-text">Accompagnement humain</span>
-                            <span className="small-text text-smTextWhtColor">Pédagogie, écoute et transparence à chaque étape</span>
-                        </li>
-                        <li className="p-4 rounded-lg border border-borderColor">
-                            <span className="font-semibold block mb-1 normal-text">Tarification modulaire</span>
-                            <span className="small-text text-smTextWhtColor">Vous ne payez que pour ce dont vous avez vraiment besoin</span>
-                        </li>
-                    </ul>
-
                     <p className="mt-6 normal-text">
                         <strong>Notre ambition ?</strong> Un web plus humain, accessible à ceux qui n’ont ni le temps
                         ni les compétences pour s’y plonger seuls. Nous valorisons les savoir-faire locaux, soutenons
@@ -95,7 +80,7 @@ const APropos = () => {
                     </div>
 
                     <Image
-                        src="/img/emilien-jules.jpg"
+                        src="/img/emilien-jules.webp"
                         alt="Photo d'Emilien & Jules - Co-fondateurs et co-dirigeants de NewCrea"
                         width={576}
                         height={384}
@@ -120,39 +105,33 @@ const APropos = () => {
                     développement</strong>, des <strong>leviers d’image</strong> et des <strong>moteurs de
                     croissance</strong>.
                 </p>
-                <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                    <div className="border border-borderColor rounded-xl p-6">
-                        <h3 className="font-semibold normal-text mb-3">Une approche personnalisée</h3>
-                        <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">
-                            <li>Étude de l’activité, des objectifs et de la clientèle</li>
-                            <li>Audits et maquettes personnalisées</li>
-                        </ul>
-                    </div>
-
-                    <div className="border border-borderColor rounded-xl p-6">
-                        <h3 className="font-semibold normal-text mb-3">Une vraie proximité</h3>
-                        <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">
-                            <li>Relation étroite avec nos clients</li>
-                            <li>Rendez-vous physiques dans la mesure du possible</li>
-                        </ul>
-                    </div>
-
-                    <div className="border border-borderColor rounded-xl p-6">
-                        <h3 className="font-semibold normal-text mb-3">Une offre accessible</h3>
-                        <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">
-                            <li>Tarifs justes, pensés pour les TPE/PME</li>
-                            <li>Possibilité de déduire certains coûts</li>
-                        </ul>
-                    </div>
-
-                    <div className="border border-borderColor rounded-xl p-6">
-                        <h3 className="font-semibold normal-text mb-3">Des résultats tangibles</h3>
-                        <ul className="list-disc list-inside small-text text-smTextWhtColor space-y-1">
-                            <li>Sites optimisés pour convertir (SEO, rapidité, UX/UI)</li>
-                            <li>Plus de visibilité, plus de clients, plus de ventes</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+                    <li className=" overflow-hidden border border-borderColor hover:border-paletteColor2 hover:rounded-3xl rounded-lg transition-all duration-300">
+                        <Image src="/img/audit-personnalise.webp" alt="Image représentant un audit personnalisé"
+                               className="w-full" width={200} height={100} loading="lazy"></Image>
+                        <div className="p-4 ">
+                            <span className="font-semibold block mb-1 normal-text">Audit personnalisé</span>
+                            <span className="small-text text-smTextWhtColor">Nous analysons vos besoins en profondeur pour concevoir une présence en ligne qui vous ressemble vraiment — un site pensé comme un véritable levier de visibilité, pas juste une vitrine.</span>
+                        </div>
+                    </li>
+                    <li className="overflow-hidden border border-borderColor hover:border-paletteColor2 hover:rounded-3xl rounded-lg transition-all duration-300">
+                        <Image src="/img/accompagnement-humain.webp" alt="Image représentant un accompagnement humain"
+                               className="w-full" width={200} height={100} loading="lazy"></Image>
+                        <div className="p-4 ">
+                            <span className="font-semibold block mb-1 normal-text">Accompagnement humain</span>
+                            <span className="small-text text-smTextWhtColor">Nous plaçons la transparence, l'écoute et la confiance au cœur de chaque projet, pour construire avec vous des solutions numériques sur mesure, portées par une véritable relation humaine.</span>
+                        </div>
+                    </li>
+                    <li className="overflow-hidden border border-borderColor hover:border-paletteColor2 hover:rounded-3xl rounded-lg transition-all duration-300">
+                        <Image src="/img/tarification-modulaire.webp"
+                               alt="Image représentant une tarification modulaire" className="w-full" width={200}
+                               height={100} loading="lazy"></Image>
+                        <div className="p-4 ">
+                            <span className="font-semibold block mb-1 normal-text">Tarification modulaire</span>
+                            <span className="small-text text-smTextWhtColor"> Nos offres sont flexibles et pensées pour s'adapter précisément à vos besoins réels — vous ne payez que pour ce qui est utile et réellement pertinent pour votre projet.</span>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
             <CTA

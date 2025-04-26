@@ -20,7 +20,7 @@ const ServiceSection = ({ title, desc, img, route, reverse }) => {
 
                 <p className="mb-12 normal-text text-left">{desc}</p>
                 <Link href={route} className="transform rounded-full border-2 border-paletteColor1 bg-white px-4 py-2 text-paletteColor1 transition-all duration-300 ease-in-out hover:origin-center hover:scale-105 hover:bg-paletteColor1 hover:text-paletteColor3 normal-text">
-                    Je suis intéressé(e)
+                    Voir les détails
                 </Link>
             </div>
 
