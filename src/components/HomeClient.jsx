@@ -44,27 +44,18 @@ export default function HomeClient() {
                 <div
                     className="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto px-4">
                     <Offre
-                        imageSrc="/img/creation-site-web.webp"
-                        altText="Image représentation la création"
                         title="Création de site web"
                         description="Présentez votre activité, attirez de nouveaux clients et affirmez votre présence en ligne grâce à un site web conçu pour vous. Moderne, clair et fidèle à votre image, il renforce votre visibilité et inspire confiance dès les premières secondes."
-                        price={0}
                         route={"/services/creation-site-web"}
                     />
                     <Offre
-                        imageSrc="/img/refonte-site-web.webp"
-                        altText="Image représentation la création"
                         title="Refonte de site web"
                         description="Votre site ne reflète plus vos ambitions ? Nous le transformons pour qu’il devienne un atout : un design percutant, une expérience utilisateur fluide et des performances optimisées pour marquer les esprits."
-                        price={0}
                         route={"/services/refonte-site-web"}
                     />
                     <Offre
-                        imageSrc="/img/creation-identite-visuelle.webp"
-                        altText="Image représentation la création"
                         title="Création d'identité visuelle"
                         description="Offrez une identité forte à votre entreprise avec une identité visuelle unique et mémorable. Nous créons un design sur-mesure qui reflète vos valeurs et capte l’attention dès le premier regard."
-                        price={0}
                         route={"/services/creation-identite-visuelle"}
                     />
                 </div>
@@ -80,7 +71,7 @@ export default function HomeClient() {
                     </div>
 
                     <div className="flex flex-col-reverse lg:grid lg:grid-cols-3 gap-8 items-center">
-                        <div className="lg:col-span-1 space-y-4">
+                        <div className="lg:col-span-1 space-y-4 px-4 lg:px-0">
                             <p className="normal-text">
                                 Avant toute proposition, nous étudions votre activité, vos enjeux et vos objectifs pour
                                 vous proposer une solution vraiment pertinente.
@@ -95,7 +86,7 @@ export default function HomeClient() {
                             </p>
                         </div>
 
-                        <div className="lg:col-span-2 flex justify-center">
+                        <div className="lg:col-span-2 flex lg:justify-end justify-center">
                             <Image
                                 src="/img/work.webp"
                                 alt="Image représentant un travail collaboratif"
